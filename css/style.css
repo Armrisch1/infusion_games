@@ -6,6 +6,10 @@
   font-family: "JetBrains Mono", monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   max-width: 1920px;
   margin: 0 auto;
@@ -25,6 +29,10 @@
   padding: 50px 100px;
   color: #ffffff;
   text-transform: uppercase;
+}
+.main-menu a {
+  text-decoration: none;
+  color: #ffffff;
 }
 .main-menu #close-logo {
   cursor: pointer;
