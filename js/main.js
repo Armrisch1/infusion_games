@@ -31,7 +31,7 @@ function handleScroll() {
    let fill = "#ffffff";
    for (const game of games) {
       const { top, bottom } = game.element.getBoundingClientRect();
-      if (top < 0 && bottom >= 0) {
+      if (top < 120 && bottom >= 0) {
          fill = game.color;
          break;
       }
@@ -39,7 +39,7 @@ function handleScroll() {
    if (fill === "#ffffff") {
       for (const section of sections) {
          const { top, bottom } = section.element.getBoundingClientRect();
-         if (top < 0 && bottom >= 0) {
+         if (top < 120 && bottom >= 0) {
             fill = section.color;
             break;
          }

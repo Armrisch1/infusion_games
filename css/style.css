@@ -13,7 +13,7 @@ html {
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 120px;
 }
 
 .main-menu {
@@ -21,10 +21,9 @@ html {
   background-color: #000000;
   flex-direction: column;
   align-items: flex-start;
-  width: 736px;
+  width: 40%;
   height: 100vh;
   position: fixed;
-  width: 736px;
   z-index: 9999;
   padding: 50px 100px;
   color: #ffffff;
@@ -78,7 +77,7 @@ html {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -216,6 +215,7 @@ html {
   line-height: 90px;
   font-weight: 800;
   margin-bottom: 33px;
+  max-width: 560px;
 }
 .main-section-texts p {
   font-size: 60px;
@@ -284,7 +284,7 @@ html {
   width: 380px;
 }
 .main-infusion-center div:not(:last-child) {
-  margin-bottom: 50px;
+  margin-bottom: 72px;
 }
 .main-infusion-center h3 {
   font-size: 40px;
@@ -302,7 +302,7 @@ html {
   font-weight: 400;
 }
 .main-infusion-center ul li:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .main-infusion-img {
   width: 260px;
@@ -689,6 +689,8 @@ html {
 }
 .main-info-section-img img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .main-founders-section {
   position: relative;
@@ -839,6 +841,12 @@ html {
 }
 
 @media only screen and (max-width: 1629px) {
+  .container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
   .main-header-list {
     width: 75%;
   }
