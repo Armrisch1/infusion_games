@@ -14,17 +14,46 @@ function changeMenuState(_case) {
 // change logo color during scroll
 
 const logo = document.querySelector(".main-header-list-logo");
+const text = document.querySelector(".headerDesc");
 
 const games = [
-   { element: document.querySelector(".main-cyber"), color: "#ADF217" },
-   { element: document.querySelector(".main-cybr-car"), color: "#ADF217" },
-   { element: document.querySelector(".main-arena"), color: "#ADF217" },
-   { element: document.querySelector(".main-heroes"), color: "#ADF217" },
+   {
+      element: document.querySelector(".main-cyber"),
+      color: "#ADF217",
+      text: "games",
+   },
+   {
+      element: document.querySelector(".main-cybr-car"),
+      color: "#ADF217",
+      text: "games",
+   },
+   {
+      element: document.querySelector(".main-arena"),
+      color: "#ADF217",
+      text: "games",
+   },
+   {
+      element: document.querySelector(".main-heroes"),
+      color: "#ADF217",
+      text: "games",
+   },
 ];
 const sections = [
-   { element: document.querySelector(".unique-ads"), color: "#118DFF" },
-   { element: document.querySelector(".cyberX"), color: "#8F00FF" },
-   { element: document.querySelector(".cgbox"), color: "#FF5C00" },
+   {
+      element: document.querySelector(".unique-ads"),
+      color: "#118DFF",
+      text: "tech",
+   },
+   {
+      element: document.querySelector(".cyberX"),
+      color: "#8F00FF",
+      text: "web3",
+   },
+   {
+      element: document.querySelector(".cgbox"),
+      color: "#FF5C00",
+      text: "graphics",
+   },
 ];
 
 function handleScroll() {
@@ -33,6 +62,7 @@ function handleScroll() {
       const { top, bottom } = game.element.getBoundingClientRect();
       if (top < 120 && bottom >= 0) {
          fill = game.color;
+         text.innerText = game.text;
          break;
       }
    }
@@ -41,7 +71,10 @@ function handleScroll() {
          const { top, bottom } = section.element.getBoundingClientRect();
          if (top < 120 && bottom >= 0) {
             fill = section.color;
+            text.innerText = section.text;
             break;
+         } else {
+            text.innerText = "";
          }
       }
    }

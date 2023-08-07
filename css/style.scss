@@ -154,6 +154,7 @@ html {
       }
 
       &-list {
+         position: relative;
          display: flex;
          justify-content: center;
          align-items: center;
@@ -163,6 +164,17 @@ html {
          background-position: center;
          padding: 39px 130px;
          //height: 136px;
+
+         .headerDesc {
+            position: absolute;
+            color: #ffffff;
+            text-transform: uppercase;
+            bottom: 13px;
+            letter-spacing: 23px;
+            left: 53.3%;
+            transform: translate(-50%, 0);
+            font-size: 12px;
+         }
 
          a {
             color: #ffffff;
@@ -243,7 +255,7 @@ html {
 
    &-section {
       display: flex;
-      align-items: center;
+      // align-items: center;
       justify-content: space-between;
       margin-top: 66px;
 
@@ -632,6 +644,8 @@ html {
          justify-content: space-between;
 
          img {
+            position: relative;
+            left: -83px;
             width: 500px;
          }
 

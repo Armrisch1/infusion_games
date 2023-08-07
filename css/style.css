@@ -130,6 +130,7 @@ html {
   z-index: 9;
 }
 .main-header-list {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,6 +139,16 @@ html {
   background-size: 100% 100%;
   background-position: center;
   padding: 39px 130px;
+}
+.main-header-list .headerDesc {
+  position: absolute;
+  color: #ffffff;
+  text-transform: uppercase;
+  bottom: 13px;
+  letter-spacing: 23px;
+  left: 53.3%;
+  transform: translate(-50%, 0);
+  font-size: 12px;
 }
 .main-header-list a {
   color: #ffffff;
@@ -201,7 +212,6 @@ html {
 }
 .main-section {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-top: 66px;
 }
@@ -518,6 +528,8 @@ html {
   justify-content: space-between;
 }
 .main-heroes-header img {
+  position: relative;
+  left: -83px;
   width: 500px;
 }
 .main-heroes-header p {
