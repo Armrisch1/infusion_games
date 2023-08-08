@@ -493,9 +493,9 @@ html {
          display: flex;
          flex-direction: column;
 
-         //  &-bgimage {
-         //     width: 840px;
-         //  }
+         &-bgimage {
+            height: 90%;
+         }
 
          &-watch {
             color: #ffffff;
@@ -800,6 +800,19 @@ html {
             line-height: 40px;
          }
 
+         &-header {
+            display: flex;
+            margin-bottom: 44px;
+
+            &-desc {
+               font-size: 28px;
+               color: #000000;
+               font-weight: 800;
+
+               margin-left: 60px;
+            }
+         }
+
          &-desc {
             font-size: 28px;
             color: #000000;
@@ -857,7 +870,7 @@ html {
          img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            // object-fit: cover;
          }
       }
    }
@@ -1054,7 +1067,6 @@ html {
 @media only screen and (max-width: 1629px) {
    .container {
       max-width: 1920px;
-      margin: 0 auto;
       padding-left: 40px;
       padding-right: 40px;
    }
@@ -1065,20 +1077,17 @@ html {
          }
 
          &-list {
-            width: 75%;
+            // width: 75%;
 
             a {
                font-size: 14px;
             }
 
-            &-line {
-            }
-
-            &-logo {
-               width: 150px;
-               margin-left: 70px;
-               margin-right: 70px;
-            }
+            // &-logo {
+            //    width: 150px;
+            //    margin-left: 70px;
+            //    margin-right: 70px;
+            // }
          }
       }
 
@@ -1141,9 +1150,9 @@ html {
             &-line {
             }
 
-            &-logo {
-               width: 130px;
-            }
+            // &-logo {
+            //    width: 130px;
+            // }
          }
       }
 
@@ -1206,6 +1215,10 @@ html {
          font-size: 22px;
          line-height: 36px;
       }
+   }
+   .main-header-list-logo {
+      margin-left: 50px;
+      margin-right: 50px;
    }
    .main-infusion-left {
       p {
@@ -1348,19 +1361,7 @@ html {
          }
 
          &-list {
-            padding: 24px 40px;
-
-            a {
-            }
-
-            &-line {
-               margin-inline: 25px;
-            }
-
-            &-logo {
-               width: 120px;
-               margin-inline: 40px;
-            }
+            padding: 39px 80px;
          }
       }
 

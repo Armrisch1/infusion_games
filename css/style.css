@@ -406,6 +406,9 @@ html {
   display: flex;
   flex-direction: column;
 }
+.main-cyber-right-bgimage {
+  height: 90%;
+}
 .main-cyber-right-watch {
   color: #ffffff;
   font-size: 20px;
@@ -654,6 +657,16 @@ html {
   margin-bottom: 26px;
   line-height: 40px;
 }
+.main-info-section-content-header {
+  display: flex;
+  margin-bottom: 44px;
+}
+.main-info-section-content-header-desc {
+  font-size: 28px;
+  color: #000000;
+  font-weight: 800;
+  margin-left: 60px;
+}
 .main-info-section-content-desc {
   font-size: 28px;
   color: #000000;
@@ -702,7 +715,6 @@ html {
 .main-info-section-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 .main-founders-section {
   position: relative;
@@ -855,20 +867,11 @@ html {
 @media only screen and (max-width: 1629px) {
   .container {
     max-width: 1920px;
-    margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
   }
-  .main-header-list {
-    width: 75%;
-  }
   .main-header-list a {
     font-size: 14px;
-  }
-  .main-header-list-logo {
-    width: 150px;
-    margin-left: 70px;
-    margin-right: 70px;
   }
 }
 @media only screen and (max-width: 1474px) {
@@ -880,9 +883,6 @@ html {
   }
   .main-header-btn-right {
     margin-left: 10px;
-  }
-  .main-header-list-logo {
-    width: 130px;
   }
   .main-section-texts h3 {
     font-size: 60px;
@@ -912,6 +912,10 @@ html {
   .main-infusion-left p {
     font-size: 22px;
     line-height: 36px;
+  }
+  .main-header-list-logo {
+    margin-left: 50px;
+    margin-right: 50px;
   }
   .main-infusion-left p {
     font-size: 22px;
@@ -1011,14 +1015,7 @@ html {
     font-size: 14px;
   }
   .main-header-list {
-    padding: 24px 40px;
-  }
-  .main-header-list-line {
-    margin-inline: 25px;
-  }
-  .main-header-list-logo {
-    width: 120px;
-    margin-inline: 40px;
+    padding: 39px 80px;
   }
   .main-section-texts h3 {
     font-size: 50px;
