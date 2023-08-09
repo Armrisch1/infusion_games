@@ -60,7 +60,7 @@ function handleScroll() {
    let fill = "#ffffff";
    for (const game of games) {
       const { top, bottom } = game.element.getBoundingClientRect();
-      if (top < 120 && bottom >= 0) {
+      if (top < 150 && bottom >= 150) {
          fill = game.color;
          text.innerText = game.text;
          break;
@@ -69,7 +69,7 @@ function handleScroll() {
    if (fill === "#ffffff") {
       for (const section of sections) {
          const { top, bottom } = section.element.getBoundingClientRect();
-         if (top < 120 && bottom >= 0) {
+         if (top < 150 && bottom >= 150) {
             fill = section.color;
             text.innerText = section.text;
             break;
