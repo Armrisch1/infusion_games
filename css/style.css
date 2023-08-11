@@ -841,10 +841,10 @@ html {
   margin-left: 380px;
   margin-top: 130px;
 }
-.main-contacts-section-footer img {
+.main-contacts-section-footer a {
   cursor: pointer;
 }
-.main-contacts-section-footer img:not(:last-child) {
+.main-contacts-section-footer a:not(:last-child) {
   margin-right: 85px;
 }
 .main-footer {
