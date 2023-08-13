@@ -99,9 +99,35 @@ menuOpenBox.addEventListener("click", () => changeMenuState("open"));
 menuCloseBox.addEventListener("click", () => changeMenuState("close"));
 
 // Link divs for lazy dev
-const elementsWithHref = document.querySelectorAll('[data-href]');
+const elementsWithHref = document.querySelectorAll("[data-href]");
 
-elementsWithHref.forEach(element => {
-  element.addEventListener('click', () => window.location.href = element.getAttribute('data-href'));
+elementsWithHref.forEach((element) => {
+   element.addEventListener(
+      "click",
+      () => (window.location.href = element.getAttribute("data-href"))
+   );
 });
 
+// download modal
+
+const openBtn = document.getElementById("openBtn");
+const overlay = document.getElementById("overlay");
+const modal = document.getElementById("modal");
+const closeModal = document.getElementById("close-modal");
+
+openBtn.addEventListener("click", () => {
+   overlay.style.display = "block";
+   modal.style.display = "block";
+});
+
+closeModal.addEventListener("click", () => {
+   overlay.style.display = "none";
+   modal.style.display = "none";
+});
+
+overlay.addEventListener("click", (event) => {
+   if (event.target === overlay) {
+      overlay.style.display = "none";
+      modal.style.display = "none";
+   }
+});

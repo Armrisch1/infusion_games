@@ -95,7 +95,7 @@
                 </ul>
             </div>
 
-            <button class="main-header-btn main-header-btn-right">download</button>
+            <button id="openBtn" class="main-header-btn main-header-btn-right">download</button>
             <img id="menu_open" class="main-header-menuIcon" src="./assets/images/burg.svg" alt="burg">
         </header>
         <!-- header section -->
@@ -165,7 +165,7 @@
                 </p>
                 <div class="main-cyber-left-google-play">
                     <p class="main-cyber-left-google-play-header">Available</p>
-                    <div class="main-cyber-left-google-play-box" 
+                    <div class="main-cyber-left-google-play-box"
                         data-href="https://play.google.com/store/apps/details?id=cyber.wars.shooter.guns.action.racing.flying.cars.pvp">
                         <img src="./assets/images/gplay.svg" alt="gplay">
                         <div class="main-cyber-left-google-play-box-content">
@@ -255,7 +255,7 @@
                         <p class="main-heroes-footer-left-google-play-header">Available</p>
                         <div class="main-heroes-footer-left-google-play-box">
                             <img src="./assets/images/gplay.svg" alt="gplay">
-                            <div class="main-heroes-footer-left-google-play-box-content" 
+                            <div class="main-heroes-footer-left-google-play-box-content"
                                 data-href="https://play.google.com/store/apps/details?id=fighting.rpg.adventure.multiplayer.wars.pvp.battles.arena.heroes">
                                 <span>Get it on</span>
                                 <p>Google Play</p>
@@ -456,6 +456,43 @@
             <p>Copyright 2023 © Infusion Games</p>
         </footer>
     </main>
+    <!-- download modal -->
+    <div id="overlay" class="modal-wrapper">
+        <div id="modal" class="modal-wrapper-download">
+            <img id="close-modal" class="modal-wrapper-download-close" src="./assets/images/close.png" alt="close">
+            <div class="modal-wrapper-download-content">
+                <img src="./assets/images/mimg1-min.png" alt="UI">
+
+                <div class="modal-wrapper-download-content-logos">
+                    <div class="modal-wrapper-download-content-logos-images">
+                        <img src="./assets/images/gplay2.svg" alt="UI">
+                        <img src="./assets/images/cybrWEB.svg" alt="UI">
+                        <img src="./assets/images/cybrStore.svg" alt="UI">
+                        <img src="./assets/images/cybrNS.svg" alt="UI">
+                    </div>
+                    <div class="modal-wrapper-download-content-logos-texts">
+                        <p>Available</p>
+                        <p>Coming soon</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-wrapper-download-content">
+                <img src="./assets/images/mimg2.png" alt="UI">
+                <div class="modal-wrapper-download-content-logos">
+                    <div class="modal-wrapper-download-content-logos-images">
+                        <img src="./assets/images/gplay2.svg" alt="UI">
+                        <img src="./assets/images/cybrWEB.svg" alt="UI">
+                        <img src="./assets/images/cybrNS.svg" alt="UI">
+                    </div>
+                    <div class="modal-wrapper-download-content-logos-texts">
+                        <p>Available</p>
+                        <p>Coming soon</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <script src="./js/main.js"></script>
 </body>
