@@ -925,8 +925,8 @@ html {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  padding: 40px;
-  max-height: 95vh;
+  padding: 0 40px 40px 40px;
+  max-height: 98vh;
   overflow: auto;
 }
 .modal-wrapper-download-close {
@@ -934,7 +934,7 @@ html {
   cursor: pointer;
   margin-left: auto;
   position: absolute;
-  right: 2px;
+  right: 20px;
   top: 20px;
 }
 .modal-wrapper-download-content {
@@ -944,6 +944,10 @@ html {
 }
 .modal-wrapper-download-content-img {
   margin-bottom: 20px;
+}
+.modal-wrapper-download-content > img {
+  height: 200px;
+  object-fit: cover;
 }
 .modal-wrapper-download-content-logos-images {
   display: flex;
