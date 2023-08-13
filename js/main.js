@@ -116,7 +116,7 @@ const modal = document.getElementById("modal");
 const closeModal = document.getElementById("close-modal");
 
 openBtn.addEventListener("click", () => {
-   overlay.style.display = "block";
+   overlay.style.display = "flex";
    modal.style.display = "block";
 });
 
