@@ -16,6 +16,19 @@ html {
   padding: 0 120px;
 }
 
+.cb-bg-color {
+  position: relative;
+}
+.cb-bg-color div {
+  border-radius: 295.302px;
+  background: rgba(0, 209, 255, 0.4);
+  filter: blur(58.2106018066px);
+  width: fit-content;
+  width: 303px;
+  height: 92px;
+  position: absolute;
+}
+
 .main-menu {
   display: none;
   background-color: #000000;
@@ -146,7 +159,7 @@ html {
   text-transform: uppercase;
   bottom: 13px;
   letter-spacing: 23px;
-  left: 53.3%;
+  left: 54.7%;
   transform: translate(-50%, 0);
   font-size: 12px;
 }
@@ -368,7 +381,7 @@ html {
   width: 50%;
 }
 .main-cyber-left-logo {
-  width: 276px;
+  width: 303px;
   margin-bottom: 82px;
 }
 .main-cyber-left h3 {
@@ -433,9 +446,6 @@ html {
 .main-cyber-left-logos-imgs {
   display: flex;
 }
-.main-cyber-left-logos-imgs img {
-  cursor: pointer;
-}
 .main-cyber-left-logos-imgs img:not(:last-child) {
   margin-right: 15px;
 }
@@ -446,14 +456,24 @@ html {
 }
 .main-cyber-right-bgimage {
   height: 90%;
+  object-fit: contain;
 }
 .main-cyber-right-watch {
   color: #ffffff;
   font-size: 20px;
   text-align: right;
   margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.main-cyber-right-watch img {
+  margin-right: 15px;
+  width: 18px;
+  height: 18px;
 }
 .main-cyber-right-watch a {
+  margin-left: 15px;
   color: #ffffff;
   text-decoration: none;
   border-bottom: 1px solid #ffffff;
@@ -503,7 +523,7 @@ html {
   color: #ffffff;
 }
 .main-cybr-car-header img {
-  width: 280px;
+  width: 303px;
 }
 .main-cybr-car-footer {
   display: flex;
@@ -648,9 +668,6 @@ html {
 .main-heroes-footer-left-logos-imgs {
   display: flex;
 }
-.main-heroes-footer-left-logos-imgs img {
-  cursor: pointer;
-}
 .main-heroes-footer-left-logos-imgs img:not(:last-child) {
   margin-right: 15px;
 }
@@ -664,8 +681,17 @@ html {
   font-size: 20px;
   text-align: right;
   margin-top: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.main-heroes-footer-right-watch img {
+  margin-right: 15px;
+  width: 18px;
+  height: 18px;
 }
 .main-heroes-footer-right-watch a {
+  margin-left: 15px;
   color: #ffffff;
   text-decoration: none;
   border-bottom: 1px solid #ffffff;
@@ -746,6 +772,7 @@ html {
 .main-info-section-content-link span {
   border-bottom: 1px solid #000000;
   width: fit-content;
+  cursor: pointer;
 }
 .main-info-section-img {
   width: 50%;
@@ -953,8 +980,10 @@ html {
   display: flex;
 }
 .modal-wrapper-download-content-logos-images img {
-  cursor: pointer;
   height: 46px;
+}
+.modal-wrapper-download-content-logos-images img:first-child {
+  cursor: pointer;
 }
 .modal-wrapper-download-content-logos-images img:not(:last-child) {
   margin-right: 15px;

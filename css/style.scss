@@ -22,6 +22,19 @@ html {
    padding: 0 120px;
 }
 
+.cb-bg-color {
+   position: relative;
+
+   div {
+      border-radius: 295.302px;
+      background: rgba(0, 209, 255, 0.4);
+      filter: blur(58.210601806640625px);
+      width: fit-content;
+      width: 303px;
+      height: 92px;
+      position: absolute;
+   }
+}
 .main-menu {
    display: none;
    background-color: #000000;
@@ -171,7 +184,7 @@ html {
             text-transform: uppercase;
             bottom: 13px;
             letter-spacing: 23px;
-            left: 53.3%;
+            left: 54.7%;
             transform: translate(-50%, 0);
             font-size: 12px;
          }
@@ -444,7 +457,7 @@ html {
          width: 50%;
 
          &-logo {
-            width: 276px;
+            width: 303px;
             margin-bottom: 82px;
          }
 
@@ -520,9 +533,7 @@ html {
 
             &-imgs {
                display: flex;
-               img {
-                  cursor: pointer;
-               }
+
                img:not(:last-child) {
                   margin-right: 15px;
                }
@@ -537,6 +548,7 @@ html {
 
          &-bgimage {
             height: 90%;
+            object-fit: contain;
          }
 
          &-watch {
@@ -544,8 +556,18 @@ html {
             font-size: 20px;
             text-align: right;
             margin-top: auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            img {
+               margin-right: 15px;
+               width: 18px;
+               height: 18px;
+            }
 
             a {
+               margin-left: 15px;
                color: #ffffff;
                text-decoration: none;
                border-bottom: 1px solid #ffffff;
@@ -605,7 +627,7 @@ html {
          }
 
          img {
-            width: 280px;
+            width: 303px;
          }
       }
 
@@ -778,9 +800,7 @@ html {
 
                &-imgs {
                   display: flex;
-                  img {
-                     cursor: pointer;
-                  }
+
                   img:not(:last-child) {
                      margin-right: 15px;
                   }
@@ -803,7 +823,18 @@ html {
                text-align: right;
                margin-top: 53px;
 
+               display: flex;
+               align-items: center;
+               justify-content: flex-end;
+
+               img {
+                  margin-right: 15px;
+                  width: 18px;
+                  height: 18px;
+               }
+
                a {
+                  margin-left: 15px;
                   color: #ffffff;
                   text-decoration: none;
                   border-bottom: 1px solid #ffffff;
@@ -902,6 +933,7 @@ html {
             span {
                border-bottom: 1px solid #000000;
                width: fit-content;
+               cursor: pointer;
             }
          }
       }
@@ -1158,7 +1190,10 @@ html {
             &-images {
                display: flex;
                img {
-                  cursor: pointer;
+                  &:first-child {
+                     cursor: pointer;
+                  }
+
                   height: 46px;
                }
                img:not(:last-child) {

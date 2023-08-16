@@ -22,8 +22,8 @@
             <p class="main-menu-web3"><a href="#cyberX">infusion web3</a></p>
             <p class="main-menu-cg"><a href="#cgbox">infusion cg</a></p>
             <div class="main-menu-otherLinks">
-                <p><a href="#founders">ABOUT</a></p>
-                <p><a href="#">FOUNDERS & CORE TEAM</a></p>
+                <p><a href="#about-us-sec">ABOUT</a></p>
+                <p><a href="#founders">FOUNDERS</a></p>
                 <p><a href="#contact">CONTACTS</a></p>
             </div>
         </div>
@@ -64,7 +64,7 @@
                         fill="white" />
                 </svg>
 
-                <a href="#founders">ABOUT US</a>
+                <a href="#about-us-sec">ABOUT</a>
                 <img class="main-header-list-line" src="./assets/images/line.png" alt="line">
                 <a href="#contact">CONTACTS</a>
             </div>
@@ -87,7 +87,7 @@
                     <li><a href="">SOLUTIONS</a></li>
                     <li>
                         <ul>
-                            <li><a href="">ABOUT US</a></li>
+                            <li><a href="about-us-sec">ABOUT</a></li>
                             <li><a href="">CONTACTS</a></li>
                         </ul>
                     </li>
@@ -104,7 +104,8 @@
                 <h3>We create mobile games</h3>
                 <p>and develop technological solutions _</p>
                 <div class="main-section-texts-btns">
-                    <button class="main-section-texts-btns-btn main-section-texts-btns-btn-left">infusion games</button>
+                    <button class="main-section-texts-btns-btn main-section-texts-btns-btn-left"
+                        data-href="#cyber">infusion games</button>
                 </div>
             </div>
             <div class="main-section-imgBox">
@@ -119,7 +120,7 @@
             </div>
         </section>
         <!-- infusion section -->
-        <section class="main-infusion container">
+        <section class="main-infusion container" id="about-us-sec">
             <div class="main-infusion-left">
                 <h3 class="section-title">About _</h3>
                 <h3><span>Infusion</span> is a bright and self-assured mobile game studio, based in Tallinn. </h3>
@@ -148,7 +149,11 @@
         <!-- cyber game section -->
         <section id="cyber" class="main-cyber container">
             <div class="main-cyber-left">
-                <img class="main-cyber-left-logo" src="./assets/images/cyber-logo.png" alt="cyber logo">
+                <div class="cb-bg-color">
+                    <div></div>
+                    <img class="main-cyber-left-logo" src="./assets/images/cwsmall.png" alt="cyber logo">
+                </div>
+
                 <h3>
                     The old world is gone
                     and tremendous cities
@@ -185,7 +190,8 @@
             </div>
             <div class="main-cyber-right">
                 <img class="main-cyber-right-bgimage" src="./assets/images/cyberbg1-min.png" alt="UI">
-                <p class="main-cyber-right-watch">Watch <a href="#">trailer</a> and <a href="#">gameplay</a></p>
+                <p class="main-cyber-right-watch"><img src="./assets/images/playvideo.png" alt="play">Watch <a
+                        href="https://youtu.be/HJEzX8Gd_vk ">trailer</a></p>
                 <p class="main-cyber-right-subtext">PvPMMO 3D Shooter</p>
             </div>
         </section>
@@ -198,7 +204,11 @@
                 <p>His task is to fulfill contracts for corporations to build his own organisation, thereby going
                     from a lone wolf to the head of a coalition
                     of freelancers </p>
-                <img src="./assets/images/cyber-logo.png" alt="logo">
+                <div class="cb-bg-color">
+                    <div></div>
+                    <img src="./assets/images/cwsmall.png" alt="logo">
+                </div>
+
             </div>
             <div class="main-cybr-car-footer">
                 <div class="main-cybr-car-footer-box">
@@ -271,7 +281,8 @@
                     </div>
                 </div>
                 <div class="main-heroes-footer-right">
-                    <p class="main-heroes-footer-right-watch">Watch <a href="#">trailer</a> and <a href="#">gameplay</a>
+                    <p class="main-heroes-footer-right-watch"><img src="./assets/images/playvideo.png" alt="play">Watch
+                        <a href="https://youtu.be/aC_xXDS37wA">trailer</a>
                     </p>
                     <p class="main-heroes-footer-right-subtext">PvPMMO 3D Shooter</p>
                 </div>
@@ -296,7 +307,7 @@
                         the application in the Store.</p>
                 </div>
 
-                <p class="main-info-section-content-link"><span>Watch how it works</span></p>
+                <!-- <p class="main-info-section-content-link"><span>Watch how it works</span></p> -->
             </div>
             <div class="main-info-section-img">
                 <img src="./assets/images/pepsi-min.png" alt="UI">
@@ -320,7 +331,7 @@
                         and become the ultimate champion of the cyberpunk future.</p>
                 </div>
 
-                <p class="main-info-section-content-link"><span>Watch how it works</span></p>
+                <!-- <p class="main-info-section-content-link"><span>Watch how it works</span></p> -->
             </div>
             <div class="main-info-section-img">
                 <img src="./assets/images/cyberX-min.png" alt="">
@@ -349,7 +360,7 @@
                         a diverse range of clients within the entertainment and gaming industries</p>
                 </div>
 
-                <p class="main-info-section-content-link"><span>Watch how it works</span></p>
+                <!-- <p class="main-info-section-content-link"><span>Watch how it works</span></p> -->
             </div>
             <div class="main-info-section-img ">
                 <img src="./assets/images/CG-min.png" alt="UI">
@@ -370,7 +381,7 @@
 
                 <p class="main-info-section-content-link">Is it You? Contact us!
                     <br>
-                    <span>work@infusion.com</span>
+                    <span data-href="mailto:@infusion.com">work@infusion.com</span>
                 </p>
             </div>
             <div class="main-info-section-img">
@@ -465,7 +476,8 @@
 
                 <div class="modal-wrapper-download-content-logos">
                     <div class="modal-wrapper-download-content-logos-images">
-                        <img src="./assets/images/gplay2.svg" alt="UI">
+                        <img data-href="https://play.google.com/store/apps/details?id=cyber.wars.shooter.guns.action.racing.flying.cars.pvp"
+                            src="./assets/images/gplay2.svg" alt="UI">
                         <img src="./assets/images/cybrWEB.svg" alt="UI">
                         <img src="./assets/images/cybrStore.svg" alt="UI">
                         <img src="./assets/images/cybrNS.svg" alt="UI">
@@ -480,7 +492,8 @@
                 <img class="modal-wrapper-download-content-img" src="./assets/images/mimg2.png" alt="UI">
                 <div class="modal-wrapper-download-content-logos">
                     <div class="modal-wrapper-download-content-logos-images">
-                        <img src="./assets/images/gplay2.svg" alt="UI">
+                        <img data-href="https://play.google.com/store/apps/details?id=fighting.rpg.adventure.multiplayer.wars.pvp.battles.arena.heroes"
+                            src="./assets/images/gplay2.svg" alt="UI">
                         <img src="./assets/images/cybrWEB.svg" alt="UI">
                         <img src="./assets/images/cybrNS.svg" alt="UI">
                     </div>
