@@ -16,6 +16,15 @@ html {
   padding: 0 120px;
 }
 
+#cyber,
+#founders,
+#contact,
+#arena,
+#career {
+  position: relative;
+  top: -50px;
+}
+
 .cb-bg-color {
   position: relative;
 }
@@ -380,8 +389,12 @@ html {
   flex-direction: column;
   width: 50%;
 }
+.main-cyber-left .cb-bg-color div {
+  width: 213px;
+  height: 74px;
+}
 .main-cyber-left-logo {
-  width: 303px;
+  width: 213px;
   margin-bottom: 82px;
 }
 .main-cyber-left h3 {
@@ -560,14 +573,13 @@ html {
 }
 .main-arena {
   width: 100%;
-  height: 100vh;
+  height: 1080px;
   position: relative;
 }
 .main-arena img {
-  object-fit: cover;
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 1080px;
   left: 0;
   top: 0;
 }
@@ -1068,6 +1080,19 @@ html {
   }
   .main-section-imgBox .white-block-left-bottom {
     height: 150px;
+  }
+  .main-arena {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .main-arena img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
   }
 }
 @media only screen and (max-width: 1439px) {

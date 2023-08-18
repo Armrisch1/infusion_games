@@ -22,6 +22,14 @@ html {
    padding: 0 120px;
 }
 
+#cyber,
+#founders,
+#contact,
+#arena,
+#career {
+   position: relative;
+   top: -50px;
+}
 .cb-bg-color {
    position: relative;
 
@@ -456,8 +464,15 @@ html {
          flex-direction: column;
          width: 50%;
 
+         .cb-bg-color {
+            div {
+               width: 213px;
+               height: 74px;
+            }
+         }
+
          &-logo {
-            width: 303px;
+            width: 213px;
             margin-bottom: 82px;
          }
 
@@ -673,14 +688,14 @@ html {
 
    &-arena {
       width: 100%;
-      height: 100vh;
+      height: 1080px;
       position: relative;
 
       img {
-         object-fit: cover;
+         // object-fit: cover;
          position: absolute;
          width: 100%;
-         height: 100%;
+         height: 1080px;
          left: 0;
          top: 0;
       }
@@ -1373,6 +1388,21 @@ html {
             .white-block-left-bottom {
                height: 150px;
             }
+         }
+      }
+
+      &-arena {
+         width: 100%;
+         height: 100vh;
+         position: relative;
+
+         img {
+            object-fit: cover;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
          }
       }
 

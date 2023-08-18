@@ -98,7 +98,7 @@ function changeMenuState(_case) {
 menuOpenBox.addEventListener("click", () => changeMenuState("open"));
 menuCloseBox.addEventListener("click", () => changeMenuState("close"));
 
-// Link divs for lazy dev
+// Link divs for lazy dev (:D)
 const elementsWithHref = document.querySelectorAll("[data-href]");
 
 elementsWithHref.forEach((element) => {
