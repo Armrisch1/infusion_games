@@ -1037,6 +1037,22 @@ html {
     opacity: 1;
   }
 }
+@media only screen and (max-width: 1845px) {
+  .main-header-list {
+    padding: 39px 80px;
+  }
+  .main-header-list a {
+    font-size: 14px;
+  }
+  .main-header-list-line {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .main-header-list-logo {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
 @media only screen and (max-width: 1629px) {
   .container {
     max-width: 1920px;
@@ -1210,7 +1226,15 @@ html {
     font-size: 14px;
   }
   .main-header-list {
-    padding: 39px 80px;
+    padding: 39px 50px;
+  }
+  .main-header-list-line {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .main-header-list-logo {
+    margin-left: 50px;
+    margin-right: 50px;
   }
   .main-section-texts h3 {
     font-size: 50px;
