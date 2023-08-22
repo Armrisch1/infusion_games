@@ -181,7 +181,7 @@ html {
          background-repeat: no-repeat;
          background-size: 100% 100%;
          background-position: center;
-         padding: 39px 130px;
+         padding: 39px 110px;
          //height: 136px;
 
          .headerDesc {
@@ -1444,6 +1444,33 @@ html {
 }
 
 @media only screen and (max-width: 1439px) {
+   .main {
+      &-header {
+         &-btn {
+            font-size: 14px;
+         }
+
+         &-list {
+            padding: 39px 50px;
+
+            &-line {
+               margin-left: 15px;
+               margin-right: 15px;
+            }
+
+            .headerDesc {
+               letter-spacing: 16px;
+               left: 56.4%;
+            }
+
+            &-logo {
+               width: 160px;
+               margin-left: 50px;
+               margin-right: 50px;
+            }
+         }
+      }
+   }
    .main-section-texts-btns-btn {
       padding: 16px;
    }

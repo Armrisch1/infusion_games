@@ -158,7 +158,7 @@ html {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
-  padding: 39px 130px;
+  padding: 39px 110px;
 }
 .main-header-list .headerDesc {
   position: absolute;
@@ -1110,6 +1110,25 @@ html {
   }
 }
 @media only screen and (max-width: 1439px) {
+  .main-header-btn {
+    font-size: 14px;
+  }
+  .main-header-list {
+    padding: 39px 50px;
+  }
+  .main-header-list-line {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .main-header-list .headerDesc {
+    letter-spacing: 16px;
+    left: 56.4%;
+  }
+  .main-header-list-logo {
+    width: 160px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
   .main-section-texts-btns-btn {
     padding: 16px;
   }
