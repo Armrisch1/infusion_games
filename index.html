@@ -30,13 +30,12 @@
         <!-- header -->
         <header class="main-header container">
 
-            <img src="./assets/images/menu.svg" id="open-logo" class="main-header-logo" alt="menu">
+            <img src="./assets/images/menu.svg" id="open-logo" class="main-header-logo item_hidden_media" alt="menu">
 
             <div class="main-header-list">
                 <a href="#cyber">CYBER WARS</a>
-                <img class="main-header-list-line" src="./assets/images/line.png" alt="line">
-                <a href="#arena">Arena Heroes</a>
-                <!-- <img class="main-header-list-logo" src="./assets/images/logo.png" alt="logo"> -->
+                <img  class="main-header-list-line item_hidden_media" src="./assets/images/line.png" alt="line">
+                <a class="item_hidden_media" href="#arena">Arena Heroes</a>
                 <span class="headerDesc"></span>
                 <svg class="main-header-list-logo" width="220" height="64" viewBox="0 0 220 64" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -64,9 +63,10 @@
                         fill="white" />
                 </svg>
 
-                <a href="#about-us-sec">ABOUT</a>
-                <img class="main-header-list-line" src="./assets/images/line.png" alt="line">
-                <a href="#contact">CONTACTS</a>
+                <a class="item_hidden_media" href="#about-us-sec">ABOUT</a>
+                <img class="main-header-list-line item_hidden_media" src="./assets/images/line.png" alt="line">
+                <a class="item_hidden_media" href="#contact">CONTACTS</a>
+                <a class="item_show_media" href="#arena">Arena Heroes</a>
             </div>
 
 
@@ -95,7 +95,7 @@
                 </ul>
             </div>
 
-            <button id="openBtn" class="main-header-btn main-header-btn-right">download</button>
+            <button id="openBtn" class="main-header-btn main-header-btn-right item_hidden_media">download</button>
             <img id="menu_open" class="main-header-menuIcon" src="./assets/images/burg.svg" alt="burg">
         </header>
         <!-- header section -->
@@ -170,6 +170,9 @@
                     whose death will not entail any
                     additional financial costs.
                 </p>
+
+                <p class="main-cyber-right-subtext main-cyber-right-subtext-custom item_show_media">PvPMMO 3D Shooter</p>
+                
                 <div class="main-cyber-left-google-play">
                     <p class="main-cyber-left-google-play-header">Available</p>
                     <div class="main-cyber-left-google-play-box"
@@ -191,15 +194,21 @@
                 </div>
             </div>
             <div class="main-cyber-right">
-                <img class="main-cyber-right-bgimage" src="./assets/images/cyberbg1-min.png" alt="UI">
+                <img class="main-cyber-right-bgimage item_show_media" src="./assets/images/cyberwarsmovile.png" alt="UI">
+                <img class="main-cyber-right-bgimage item_hidden_media" src="./assets/images/cyberbg1-min.png" alt="UI">
                 <p class="main-cyber-right-watch"><img src="./assets/images/playvideo.png" alt="play">Watch <a
                         href="https://youtu.be/HJEzX8Gd_vk ">trailer</a></p>
                 <p class="main-cyber-right-subtext">PvPMMO 3D Shooter</p>
             </div>
+            <div class="main-cyber-right-car-text-mobile item_show_media">
+                <h3>The player takes a role of a young brave freelancer</h3>
+                <p>His task is to fulfill contracts for corporations to build his own organisation, thereby going from a lone wolf to the head of a coalition of freelancers</p>
+            </div>
         </section>
         <!-- cyber car section -->
         <section class="main-cybr-car container">
-            <img class="main-cybr-car-bgimg" src="./assets/images/cybcarbg-min.png" alt="UI">
+            <img class="main-cybr-car-bgimg item_hidden_media" src="./assets/images/cybcarbg-min.png" alt="UI">
+            <img class="main-cybr-car-bgimg item_show_media" src="./assets/images/car-section_bg_tablet.jpg" alt="tablet">
             <div class="main-cybr-car-header">
                 <h3>The player takes
                     a role of a young brave freelancer _</h3>
@@ -236,6 +245,37 @@
                 </div>
             </div>
         </section>
+        <div class="main-cybr-car2 container">
+            <div class="main-cybr-car2-heroes-footer item_show_media">
+                <div class="main-cybr-car2-heroes-footer-right">
+                    <p class="main-cybr-car2-heroes-footer-right-watch"><img src="./assets/images/playvideo.png" alt="play">Watch
+                        <a href="https://youtu.be/aC_xXDS37wA">trailer</a>
+                    </p>
+                </div>
+                <div class="main-cybr-car2-heroes-footer-left">
+                    <div class="main-cybr-car2-heroes-footer-left-google-play">
+                        <div class="main-cybr-car2-heroes-footer-left-google-play-box">
+                            <img src="./assets/images/gplay.svg" alt="gplay">
+                            <div class="main-cybr-car2-heroes-footer-left-google-play-box-content"
+                                data-href="https://play.google.com/store/apps/details?id=fighting.rpg.adventure.multiplayer.wars.pvp.battles.arena.heroes">
+                                <span>Get it on</span>
+                                <p>Google Play</p>
+                            </div>
+                        </div>
+                        <p class="main-cybr-car2-heroes-footer-left-google-play-header">Available</p>
+                    </div>
+                    <div class="main-cybr-car2-heroes-footer-left-logos">
+                        <div class="main-cybr-car2-heroes-footer-left-logos-imgs">
+                            <img src="./assets/images/cybrStore.svg" alt="UI">
+                            <img src="./assets/images/cybrNS.svg" alt="UI">
+                            <img src="./assets/images/cybrWEB.svg" alt="UI">
+                        </div>
+                        <p class="main-cybr-car2-heroes-footer-left-logos-header">Coming soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 
         <!-- arena heroes game img section -->
         <div id="arena" class="main-arena container">
@@ -313,10 +353,13 @@
 
                 <!-- <p class="main-info-section-content-link"><span>Watch how it works</span></p> -->
             </div>
-            <div class="main-info-section-img">
+            <div class="main-info-section-img item_hidden_media">
                 <img src="./assets/images/pepsi-min.png" alt="UI">
             </div>
         </section>
+        <div class="mobile_cola_image item_show_media">
+            <img src="./assets/images/cola_with_white_top.jpg" alt="cola tablet">
+        </div>
         <!-- info section 2-->
         <div id="cyberX"></div>
         <section class="main-info-section cyberX container">
@@ -338,11 +381,14 @@
 
                 <!-- <p class="main-info-section-content-link"><span>Watch how it works</span></p> -->
             </div>
-            <div class="main-info-section-img">
+            <div class="main-info-section-img item_hidden_media">
                 <img src="./assets/images/cyberX-min.png" alt="">
             </div>
 
         </section>
+        <div class="mobile_cyberx_image item_show_media">
+            <img src="./assets/images/cyberx_with_white_top.jpg" alt="cyberx tablet">
+        </div>
         <!-- info section 3-->
         <div id="cgbox"></div>
         <section class="main-info-section cgbox container">
@@ -368,10 +414,13 @@
 
                 <!-- <p class="main-info-section-content-link"><span>Watch how it works</span></p> -->
             </div>
-            <div class="main-info-section-img ">
+            <div class="main-info-section-img item_hidden_media">
                 <img src="./assets/images/CG-min.png" alt="UI">
             </div>
         </section>
+        <div class="mobile_cyberx_image_sec item_show_media">
+            <img src="./assets/images/cyberx_sec_with_white_top.jpg" alt="cyberx sec tablet">
+        </div>
         <!-- info section 4-->
         <div id="career"></div>
         <section class="main-info-section container">
@@ -391,10 +440,13 @@
                     <span data-href="mailto:@infusion.com">work@infusion.com</span>
                 </p>
             </div>
-            <div class="main-info-section-img">
+            <div class="main-info-section-img item_hidden_media">
                 <img src="./assets/images/careers_new.png" alt="UI">
             </div>
         </section>
+        <div class="mobile_cyberx_image_third item_show_media">
+            <img src="./assets/images/cyberx_third_with_white_top.jpg" alt="cyberx third tablet">
+        </div>
         <!-- founders section -->
         <div id="founders"></div>
         <section class="main-founders-section container">
