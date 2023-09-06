@@ -27,9 +27,6 @@ html {
    scroll-behavior: smooth;
 }
 
-.main-section {
-   overflow-x: hidden;
-}
 .container {
    max-width: 1920px;
    margin: 0 auto;
@@ -1777,7 +1774,9 @@ html {
          top: 30px;
       }
    }
-
+   .main-section {
+      overflow-x: hidden;
+   }
    .main-menu {
       width: 100%;
       align-items: center;
@@ -2582,6 +2581,30 @@ html {
       position: relative;
       left: 0;
    }
+
+   .careers-section {
+      .main-info-section-content-desc {
+         max-width: 607px;
+      }
+      .main-info-section-content-texts p {
+         max-width: 488px;
+      }
+      .main-info-section-content-link {
+         font-weight: bold;
+         line-height: 30px;
+         span {
+            font-weight: normal;
+         }
+      }
+   }
+
+   .main-founders-section-infimg {
+      transform: scaleY(-1) translate(-50%, 0);
+   }
+
+   .main-info-section {
+      padding-bottom: 50px;
+   }
 }
 
 .founders-inf-mobile,
@@ -2869,7 +2892,7 @@ html {
    }
    .main-info-section {
       padding-top: 80px;
-      padding-bottom: 80px;
+      padding-bottom: 38px;
    }
 
    .main-contacts-section-header {
@@ -3122,5 +3145,21 @@ html {
    }
    .main-heroes-footer-left-google-play-box-content p {
       font-size: 13px;
+   }
+
+   .careers-section {
+      .main-info-section-content-desc {
+         max-width: 321px;
+      }
+      .main-info-section-content-texts p {
+         max-width: 224px;
+      }
+      .main-info-section-content-link {
+         font-weight: bold;
+         line-height: 30px;
+         span {
+            font-weight: normal;
+         }
+      }
    }
 }
