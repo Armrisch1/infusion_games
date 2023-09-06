@@ -21,7 +21,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.main {
+.main-section {
   overflow-x: hidden;
 }
 
@@ -1946,6 +1946,11 @@ html {
   .main-footer p {
     font-size: 12px;
   }
+  .main-section-imgBox {
+    width: calc(100% + 80px);
+    position: relative;
+    left: 0;
+  }
 }
 .founders-inf-mobile,
 .mobile-user-name {
@@ -2335,6 +2340,57 @@ html {
     width: calc(100% + 60px);
     position: relative;
     left: 0;
+  }
+  .main-cybr-car2-heroes-footer-left-google-play,
+  .main-heroes-footer-left-google-play {
+    margin-bottom: 20px;
+  }
+  .main-cybr-car2-heroes-footer-left-google-play-box,
+  .main-heroes-footer-left-google-play-box {
+    order: 1;
+  }
+  .main-cybr-car2-heroes-footer-left-google-play-header,
+  .main-heroes-footer-left-google-play-header {
+    font-size: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 0;
+  }
+  .main-cybr-car2-heroes-footer-left-google-play-box,
+  .main-heroes-footer-left-google-play-box {
+    padding: 7px 10px;
+  }
+  .main-cybr-car2-heroes-footer-right-watch,
+  .main-heroes-footer-right-watch {
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+  }
+  .main-cybr-car2-heroes-footer-left {
+    margin-top: 50px;
+  }
+  .main-cybr-car2 {
+    padding-bottom: 70px;
+    padding-top: 50px;
+  }
+  .main-cybr-car2-heroes-footer-left-logos,
+  .main-heroes-footer-left-logos {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-cybr-car2-heroes-footer-left-logos-imgs,
+  .main-heroes-footer-left-logos-imgs {
+    order: 1;
+  }
+  .main-cybr-car2-heroes-footer-left-logos-header,
+  .main-heroes-footer-left-logos-header {
+    font-size: 10px;
+    margin-bottom: 5px;
+    margin-top: 0;
+    text-align: left;
+  }
+  .main-heroes-footer-left-google-play-box-content p {
+    font-size: 13px;
   }
 }
 
