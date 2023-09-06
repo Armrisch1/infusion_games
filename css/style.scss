@@ -3053,4 +3053,14 @@ body {
          max-width: 96px;
       }
    }
+
+   .main-contacts-section-header p {
+      width: 100%;
+   }
+
+   .main-section-imgBox {
+      width: calc(100% + 60px);
+      position: relative;
+      left: 0;
+   }
 }
