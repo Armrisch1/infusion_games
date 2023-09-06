@@ -27,10 +27,9 @@ html {
    scroll-behavior: smooth;
 }
 
-body {
+.main {
    overflow-x: hidden;
 }
-
 .container {
    max-width: 1920px;
    margin: 0 auto;
@@ -2620,6 +2619,7 @@ body {
 
    .main-section .main-section-imgBox .white-right-center {
       width: 200px;
+      height: 15px;
    }
    .main-header-list {
       padding: 21px 0px;
@@ -3050,7 +3050,7 @@ body {
 
       p {
          font-size: 10px;
-         max-width: 96px;
+         max-width: 100px;
       }
    }
 
