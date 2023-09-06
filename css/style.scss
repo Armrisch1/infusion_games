@@ -2501,9 +2501,81 @@ body {
    }
 
    .main-section-imgBox img {
-      width: calc(100% + 80px);
+      // width: calc(100% + 80px);
+      // position: relative;
+      // left: -40px;
+      width: 100%;
+   }
+
+   .main-section-texts-btns-btn {
+      margin-right: 0;
+   }
+
+   .main-cybr-car2-heroes-footer-left-logos-header,
+   .main-cybr-car2-heroes-footer-left-google-play-header,
+   .main-heroes-footer-left-google-play-header,
+   .main-heroes-footer-left-logos-header {
+      font-size: 13px;
+   }
+
+   .main-info-section-content {
       position: relative;
-      left: -40px;
+   }
+
+   .main-info-section-content-desc {
+      font-size: 20px;
+      line-height: 24px;
+      max-width: 303px;
+   }
+
+   .main-info-section-content-header-desc {
+      font-size: 20px;
+      line-height: 28px;
+      margin-left: 34px;
+   }
+
+   .main-info-section-content h3 {
+      padding: 8px 16px;
+   }
+
+   .unique-ads .main-info-section-content-desc {
+      position: absolute;
+      left: 380px;
+   }
+
+   .main-info-section-content-texts p {
+      font-size: 18px;
+      line-height: 26px;
+   }
+
+   .main-info-section-content-desc {
+      margin-bottom: 26px;
+   }
+
+   .main-info-section-content-link {
+      margin-top: 50px;
+      font-size: 18px;
+   }
+
+   .main-founders-section-content h4,
+   .main-contacts-section-header h4 {
+      font-size: 28px;
+      padding: 8px 16px;
+   }
+
+   .main-contacts-section-header p {
+      font-size: 20px;
+      line-height: 28px;
+      margin-left: 34px;
+      font-weight: 800;
+   }
+
+   .main-contacts-section-content div:not(:last-child) {
+      margin-bottom: 50px;
+   }
+
+   .main-footer p {
+      font-size: 12px;
    }
 }
 
@@ -2624,6 +2696,7 @@ body {
             font-size: 20px;
             line-height: 26px;
             margin-bottom: 28px;
+            padding: 10px;
          }
 
          h3 {
@@ -2778,6 +2851,7 @@ body {
    .main-info-section-content h3 {
       font-size: 20px;
       line-height: 26px;
+      padding: 10px;
    }
 
    .main-info-section-content p {
@@ -2796,6 +2870,7 @@ body {
       h4 {
          font-size: 20px;
          line-height: 26px;
+         padding: 10px;
       }
 
       p {
@@ -2906,6 +2981,7 @@ body {
       img {
          width: 150px;
          height: 150px;
+         transform: scaleX(-1);
       }
    }
 
@@ -2924,5 +3000,57 @@ body {
       padding: 8px 16px;
       background-color: #000000;
       width: fit-content;
+   }
+
+   .main-contacts-section-header {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 44px !important;
+
+      h4 {
+         margin-bottom: 14px;
+      }
+
+      p {
+         margin-left: 0;
+      }
+   }
+
+   .main-contacts-section .main-contacts-section-footer {
+      justify-content: flex-start;
+      gap: 20px;
+      margin-top: 60px;
+   }
+
+   .main-founders-section-content h4 {
+      font-size: 20px;
+      line-height: 26px;
+      padding: 10px;
+   }
+   .unique-ads .main-info-section-content-desc {
+      position: unset;
+      max-width: 265px;
+   }
+
+   .main-info-section-content-desc {
+      font-size: 16px !important;
+      line-height: 20px !important;
+   }
+
+   .main-info-section-content-header p {
+      line-height: 23px;
+   }
+
+   .main-footer {
+      padding: 20px 30px;
+
+      &-logo {
+         width: 56px;
+      }
+
+      p {
+         font-size: 10px;
+         max-width: 96px;
+      }
    }
 }
