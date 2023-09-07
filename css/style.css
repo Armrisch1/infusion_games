@@ -2084,17 +2084,18 @@ html {
   }
   .main-infusion-center p,
   .main-infusion-center li {
-    font-size: 15px;
+    font-size: 13px !important;
     line-height: 22px;
   }
   .main-cyber-left h3 {
     font-size: 20px;
     line-height: 25px;
+    width: 238px;
   }
   .main-cyber-left p {
     font-size: 14px;
     line-height: 20px;
-    width: 100%;
+    width: 230px;
   }
   .main-cyber-left-logo {
     width: 236px;
@@ -2377,7 +2378,7 @@ html {
   }
   .main-cybr-car2-heroes-footer-left-google-play-box,
   .main-heroes-footer-left-google-play-box {
-    padding: 7px 10px;
+    padding: 4px 8px;
   }
   .main-cybr-car2-heroes-footer-right-watch,
   .main-heroes-footer-right-watch {
