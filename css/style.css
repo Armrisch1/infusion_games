@@ -1951,7 +1951,7 @@ html {
     left: 0;
   }
   .careers-section .main-info-section-content-desc {
-    max-width: 607px;
+    max-width: 590px;
   }
   .careers-section .main-info-section-content-texts p {
     max-width: 488px;
@@ -2051,6 +2051,7 @@ html {
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 37px;
+    width: 188px;
   }
   .main-section-texts-btns-btn {
     font-size: 14px;

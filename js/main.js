@@ -131,3 +131,12 @@ overlay.addEventListener("click", (event) => {
       modal.style.display = "none";
    }
 });
+
+
+if(window.matchMedia("(max-width: 767px)").matches){
+   document.querySelectorAll(".main-menu a").forEach((el) => {
+      el.addEventListener("click", function(){
+         document.querySelector(".main-menu").style.display = "none";
+      });
+   });
+}
