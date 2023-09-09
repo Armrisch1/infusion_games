@@ -6,6 +6,21 @@
   font-family: "JetBrains Mono", monospace;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+.footer_top_arrow {
+  position: absolute;
+  width: 114px !important;
+  height: 47px;
+  top: 68px;
+  right: 52px;
+  background-color: #ADF217;
+  cursor: pointer;
+  display: none;
+}
+
 .item_show_media {
   display: none;
 }
@@ -280,10 +295,7 @@ html {
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 700;
-}
-.main-section-texts-btns-btn:hover {
-  filter: drop-shadow(1px 2px 6px black);
-  transition: 0.3s;
+  color: black !important;
 }
 .main-section-texts-btns-btn-left {
   background-color: #adf217;
@@ -930,11 +942,13 @@ html {
   text-decoration: none;
   display: block;
   color: #000000;
+  position: relative;
 }
 .main-contacts-section-footer {
   display: flex;
   margin-left: 380px;
   margin-top: 130px;
+  position: relative;
 }
 .main-contacts-section-footer a {
   cursor: pointer;
@@ -1478,6 +1492,7 @@ html {
   }
   .main-infusion-center div:not(:last-child) {
     margin-bottom: 20px;
+    width: 254px;
   }
   .main-infusion-img {
     position: absolute;
@@ -1616,6 +1631,7 @@ html {
     background-color: #adf217;
     align-items: center;
     border-radius: 2px;
+    height: 46px;
   }
   .main-cybr-car2-heroes-footer-left-google-play-box img {
     width: 24px;
@@ -1645,6 +1661,7 @@ html {
   }
   .main-cybr-car2-heroes-footer-left-logos-imgs {
     display: flex;
+    height: 46px;
   }
   .main-cybr-car2-heroes-footer-left-logos-imgs img:not(:last-child) {
     margin-right: 15px;
@@ -1976,6 +1993,15 @@ html {
 }
 
 @media only screen and (max-width: 767px) {
+  .main-founders-section-content-founders > div > p span {
+    display: block;
+  }
+  .main-founders-section-content-founders > div > p span:not(.mobile-user-name) {
+    width: 100px;
+  }
+  .footer_top_arrow {
+    display: block;
+  }
   .container {
     padding-left: 30px;
     padding-right: 30px;
@@ -2059,7 +2085,7 @@ html {
   }
   .main-infusion-left {
     margin-top: 60px;
-    width: 280px;
+    width: 268px;
   }
   .main-infusion-left .section-title {
     font-size: 20px;
@@ -2141,6 +2167,9 @@ html {
     font-size: 14px;
     line-height: 20px;
     width: 190px;
+    position: relative;
+    top: -60px;
+    left: 21px;
   }
   .main-heroes .main-heroes-header-heroeslogo {
     height: 81px;
@@ -2156,10 +2185,11 @@ html {
     height: 180px;
   }
   .main-heroes .main-heroes-header-cathulhu {
-    height: 172px;
+    height: 207px;
+    top: 4px !important;
   }
   .main-infusion-img {
-    right: -230px;
+    right: -234px;
   }
   .main-cybr-car2-heroes-footer-left {
     flex-direction: column;
@@ -2195,6 +2225,7 @@ html {
   .main-info-section-content p {
     font-size: 13px;
     line-height: 18px;
+    width: 315px;
   }
   .main-info-section-content-header {
     margin-bottom: 25px;
@@ -2218,7 +2249,7 @@ html {
   }
   .main-contacts-section-content div h5 {
     font-size: 15px !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 5px !important;
   }
   .main-contacts-section-content div a {
     font-size: 14px !important;
@@ -2300,6 +2331,9 @@ html {
     display: block;
     margin-top: 35px;
     margin-bottom: 35px;
+    width: calc(100% + 60px);
+    position: relative;
+    left: -30px;
   }
   .mobile-user-name {
     display: block;
@@ -2324,8 +2358,9 @@ html {
   }
   .main-contacts-section .main-contacts-section-footer {
     justify-content: flex-start;
-    gap: 20px;
+    gap: 16px;
     margin-top: 60px;
+    width: 350px;
   }
   .main-founders-section-content h4 {
     font-size: 20px;
@@ -2354,7 +2389,7 @@ html {
     max-width: 100px;
   }
   .main-contacts-section-header p {
-    width: 100%;
+    width: 274px;
   }
   .main-section-imgBox {
     width: calc(100% + 60px);
@@ -2424,6 +2459,20 @@ html {
   }
   .careers-section .main-info-section-content-link span {
     font-weight: normal;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .main-infusion-left {
+    width: 230px;
+  }
+  .main-infusion-left h3 {
+    font-size: 16px;
+  }
+  .main-infusion-left p {
+    font-size: 14px;
+  }
+  .main-infusion-center {
+    width: 235px;
   }
 }
 

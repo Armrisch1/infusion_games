@@ -7,10 +7,20 @@
    font-family: "JetBrains Mono", monospace;
 }
 
-// body {
-//    background: black;
-//    padding: 24px;
-// }
+body {
+   overflow-x: hidden;
+}
+
+.footer_top_arrow{
+   position: absolute;
+   width: 114px!important;
+   height: 47px;
+   top: 68px;
+   right: 52px;
+   background-color: #ADF217;
+   cursor: pointer;
+   display: none;
+}
 
 .item_show_media {
    display: none;
@@ -329,11 +339,12 @@ html {
                cursor: pointer;
                text-transform: uppercase;
                font-weight: 700;
+               color: black!important;
 
-               &:hover {
-                  filter: drop-shadow(1px 2px 6px black);
-                  transition: 0.3s;
-               }
+               // &:hover {
+               //    filter: drop-shadow(1px 2px 6px black);
+               //    transition: 0.3s;
+               // }
 
                &-left {
                   background-color: #adf217;
@@ -1140,6 +1151,7 @@ html {
                text-decoration: none;
                display: block;
                color: #000000;
+               position: relative;
             }
          }
       }
@@ -1148,6 +1160,7 @@ html {
          display: flex;
          margin-left: 380px;
          margin-top: 130px;
+         position: relative;
 
          a {
             cursor: pointer;
@@ -1983,6 +1996,7 @@ html {
 
          & div:not(:last-child) {
             margin-bottom: 20px;
+            width: 254px;
          }
       }
 
@@ -2150,6 +2164,7 @@ html {
                      background-color: #adf217;
                      align-items: center;
                      border-radius: 2px;
+                     height: 46px;
 
                      img {
                         width: 24px;
@@ -2187,6 +2202,7 @@ html {
 
                   &-imgs {
                      display: flex;
+                     height: 46px;
 
                      img:not(:last-child) {
                         margin-right: 15px;
@@ -2612,6 +2628,19 @@ html {
    display: none;
 }
 @media only screen and (max-width: 767px) {
+
+   .main-founders-section-content-founders > div > p span{
+      display: block;
+   }
+
+   .main-founders-section-content-founders > div > p span:not(.mobile-user-name){
+      width: 100px;
+   }
+
+   .footer_top_arrow{
+      display: block;
+   }
+
    .container {
       padding-left: 30px;
       padding-right: 30px;
@@ -2720,7 +2749,7 @@ html {
    .main-infusion {
       &-left {
          margin-top: 60px;
-         width: 280px;
+         width: 268px;
 
          .section-title {
             font-size: 20px;
@@ -2823,6 +2852,9 @@ html {
       font-size: 14px;
       line-height: 20px;
       width: 190px;
+      position: relative;
+      top: -60px;
+      left: 21px;
    }
 
    .main-heroes .main-heroes-header-heroeslogo {
@@ -2840,11 +2872,12 @@ html {
       height: 180px;
    }
    .main-heroes .main-heroes-header-cathulhu {
-      height: 172px;
+      height: 207px;
+      top: 4px !important;
    }
 
    .main-infusion-img {
-      right: -230px;
+      right: -234px;
    }
 
    .main-cybr-car2-heroes-footer-left {
@@ -2888,6 +2921,7 @@ html {
    .main-info-section-content p {
       font-size: 13px;
       line-height: 18px;
+      width: 315px;
    }
    .main-info-section-content-header {
       margin-bottom: 25px;
@@ -2916,7 +2950,7 @@ html {
    .main-contacts-section-content div {
       h5 {
          font-size: 15px !important;
-         margin-bottom: 10px !important;
+         margin-bottom: 5px !important;
       }
 
       a {
@@ -3020,6 +3054,9 @@ html {
       display: block;
       margin-top: 35px;
       margin-bottom: 35px;
+      width: calc(100% + 60px);
+      position: relative;
+      left: -30px;
    }
 
    .mobile-user-name {
@@ -3049,8 +3086,9 @@ html {
 
    .main-contacts-section .main-contacts-section-footer {
       justify-content: flex-start;
-      gap: 20px;
+      gap: 16px;
       margin-top: 60px;
+      width: 350px;
    }
 
    .main-founders-section-content h4 {
@@ -3086,7 +3124,7 @@ html {
    }
 
    .main-contacts-section-header p {
-      width: 100%;
+      width: 274px;
    }
 
    .main-section-imgBox {
@@ -3163,5 +3201,23 @@ html {
             font-weight: normal;
          }
       }
+   }
+}
+
+@media only screen and (max-width: 374px){
+   .main-infusion-left{
+      width: 230px;
+      
+      h3 {
+         font-size: 16px;
+      }
+
+      p{
+         font-size: 14px;
+      }
+   }
+
+   .main-infusion-center{
+      width: 235px;
    }
 }
