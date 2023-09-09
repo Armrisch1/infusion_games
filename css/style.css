@@ -2474,6 +2474,9 @@ html {
   .main-infusion-center {
     width: 235px;
   }
+  .main-info-section-content p {
+    width: 282px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
