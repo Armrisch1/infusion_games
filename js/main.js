@@ -135,8 +135,10 @@ overlay.addEventListener("click", (event) => {
 
 if(window.matchMedia("(max-width: 767px)").matches){
    document.querySelectorAll(".main-menu a").forEach((el) => {
-      el.addEventListener("click", function(){
+      el.addEventListener("click", function(e){
+         e.preventDefault();
          document.querySelector(".main-menu").style.display = "none";
+         window.location.href = el.getAttribute("href");
       });
    });
 }
