@@ -16,7 +16,7 @@ body {
   height: 47px;
   top: 68px;
   right: 52px;
-  background-color: #ADF217;
+  background-color: #adf217;
   cursor: pointer;
   display: none;
 }
@@ -739,6 +739,27 @@ html {
   margin-top: 15px;
   text-align: right;
 }
+.main-heroes-footer-progress {
+  margin-top: 180px;
+}
+.main-heroes-footer-progress .main-cybr-car-footer-box-count span {
+  font-size: 16px;
+  line-height: 28px;
+}
+.main-heroes-footer-progress .big-size {
+  font-size: 24px !important;
+}
+.main-heroes-footer-progress .main-cybr-car-footer-box-count p {
+  margin-right: 30px;
+}
+.main-heroes-footer-progress ul {
+  margin-left: 25px;
+}
+.main-heroes-footer-progress ul li {
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 32px;
+}
 .main-info-section {
   display: flex;
   padding-top: 120px;
@@ -1321,6 +1342,15 @@ html {
 }
 
 @media only screen and (max-width: 1279px) {
+  .main-heroes-footer-right-watch {
+    margin-top: 76px;
+  }
+  .main-heroes-footer-progress .main-cybr-car-footer-box-count p {
+    margin-right: 17px;
+  }
+  .main-heroes-footer-progress .big-size {
+    font-size: 15px !important;
+  }
   .main-header {
     top: -1px;
   }
@@ -1795,6 +1825,8 @@ html {
     margin-right: 0;
   }
   .main-heroes {
+    display: flex;
+    flex-direction: column;
     position: relative;
   }
   .main-heroes .main-heroes-header {
@@ -1859,6 +1891,7 @@ html {
   }
   .main-heroes-footer {
     flex-direction: column;
+    order: 1;
   }
   .main-heroes-footer-left {
     width: 100%;
@@ -1986,6 +2019,18 @@ html {
   .main-info-section {
     padding-bottom: 50px;
   }
+  .main-heroes-footer-progress .main-cybr-car-footer-box-count span {
+    font-size: 10px;
+    width: 95px;
+    line-height: 15px;
+  }
+  .main-heroes-footer-progress ul li {
+    font-size: 10px;
+    line-height: 17px;
+  }
+  .main-heroes-footer-progress {
+    margin-top: 50px;
+  }
 }
 .founders-inf-mobile,
 .mobile-user-name {
@@ -1993,8 +2038,38 @@ html {
 }
 
 @media only screen and (max-width: 767px) {
+  .main-heroes-footer-right-watch {
+    margin-top: 90px;
+  }
+  .main-heroes-footer-progress .big-size {
+    font-size: 12px !important;
+  }
+  .main-heroes-footer-progress {
+    flex-direction: column;
+  }
+  .main-heroes-footer-progress .main-cybr-car-footer-box {
+    width: 100%;
+  }
+  .main-heroes-footer-progress .main-cybr-car-footer-box:not(:last-child) {
+    margin-bottom: 80px;
+  }
+  .main-heroes-footer-progress .main-cybr-car-footer-box-count span {
+    font-size: 12px;
+    width: 100%;
+    margin-left: 11px;
+  }
+  .main-cybr-car-footer-box-count p {
+    font-size: 36px !important;
+  }
   .main-founders-section-content-founders > div > p span {
     display: block;
+  }
+  .main-heroes-footer-progress ul {
+    margin-left: 16px;
+  }
+  .main-heroes-footer-progress ul li {
+    font-size: 14px;
+    line-height: 22px;
   }
   .main-founders-section-content-founders > div > p span:not(.mobile-user-name) {
     width: 100px;

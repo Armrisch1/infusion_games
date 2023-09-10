@@ -11,13 +11,13 @@ body {
    overflow-x: hidden;
 }
 
-.footer_top_arrow{
+.footer_top_arrow {
    position: absolute;
-   width: 114px!important;
+   width: 114px !important;
    height: 47px;
    top: 68px;
    right: 52px;
-   background-color: #ADF217;
+   background-color: #adf217;
    cursor: pointer;
    display: none;
 }
@@ -339,7 +339,7 @@ html {
                cursor: pointer;
                text-transform: uppercase;
                font-weight: 700;
-               color: black!important;
+               color: black !important;
 
                // &:hover {
                //    filter: drop-shadow(1px 2px 6px black);
@@ -896,6 +896,32 @@ html {
                color: #898989;
                margin-top: 15px;
                text-align: right;
+            }
+         }
+      }
+
+      &-footer-progress {
+         margin-top: 180px;
+
+         .main-cybr-car-footer-box-count span {
+            font-size: 16px;
+            line-height: 28px;
+         }
+
+         .big-size {
+            font-size: 24px !important;
+         }
+
+         .main-cybr-car-footer-box-count p {
+            margin-right: 30px;
+         }
+
+         ul {
+            margin-left: 25px;
+            li {
+               color: #ffffff;
+               font-size: 21px;
+               line-height: 32px;
             }
          }
       }
@@ -1778,6 +1804,17 @@ html {
 }
 
 @media only screen and (max-width: 1279px) {
+   .main-heroes-footer-right-watch {
+      margin-top: 76px;
+   }
+
+   .main-heroes-footer-progress .main-cybr-car-footer-box-count p {
+      margin-right: 17px;
+   }
+
+   .main-heroes-footer-progress .big-size {
+      font-size: 15px !important;
+   }
    .main-header {
       top: -1px;
 
@@ -2376,6 +2413,8 @@ html {
    }
 
    .main-heroes {
+      display: flex;
+      flex-direction: column;
       .main-heroes-header {
          flex-direction: column;
          align-items: center;
@@ -2459,6 +2498,7 @@ html {
 
       &-footer {
          flex-direction: column;
+         order: 1;
 
          &-left {
             width: 100%;
@@ -2621,6 +2661,19 @@ html {
    .main-info-section {
       padding-bottom: 50px;
    }
+   .main-heroes-footer-progress .main-cybr-car-footer-box-count span {
+      font-size: 10px;
+      width: 95px;
+      line-height: 15px;
+   }
+   .main-heroes-footer-progress ul li {
+      font-size: 10px;
+      line-height: 17px;
+   }
+
+   .main-heroes-footer-progress {
+      margin-top: 50px;
+   }
 }
 
 .founders-inf-mobile,
@@ -2628,16 +2681,53 @@ html {
    display: none;
 }
 @media only screen and (max-width: 767px) {
+   .main-heroes-footer-right-watch {
+      margin-top: 90px;
+   }
+   .main-heroes-footer-progress .big-size {
+      font-size: 12px !important;
+   }
+   .main-heroes-footer-progress {
+      flex-direction: column;
+      .main-cybr-car-footer-box {
+         width: 100%;
 
-   .main-founders-section-content-founders > div > p span{
+         &:not(:last-child) {
+            margin-bottom: 80px;
+         }
+      }
+   }
+
+   .main-heroes-footer-progress .main-cybr-car-footer-box-count span {
+      font-size: 12px;
+      width: 100%;
+      margin-left: 11px;
+   }
+
+   .main-cybr-car-footer-box-count p {
+      font-size: 36px !important;
+   }
+   .main-founders-section-content-founders > div > p span {
       display: block;
    }
 
-   .main-founders-section-content-founders > div > p span:not(.mobile-user-name){
+   .main-heroes-footer-progress ul {
+      margin-left: 16px;
+   }
+
+   .main-heroes-footer-progress ul li {
+      font-size: 14px;
+      line-height: 22px;
+   }
+
+   .main-founders-section-content-founders
+      > div
+      > p
+      span:not(.mobile-user-name) {
       width: 100px;
    }
 
-   .footer_top_arrow{
+   .footer_top_arrow {
       display: block;
    }
 
@@ -2778,7 +2868,7 @@ html {
 
          p,
          li {
-            font-size: 13px!important;
+            font-size: 13px !important;
             line-height: 22px;
          }
       }
@@ -3204,24 +3294,24 @@ html {
    }
 }
 
-@media only screen and (max-width: 374px){
-   .main-infusion-left{
+@media only screen and (max-width: 374px) {
+   .main-infusion-left {
       width: 230px;
-      
+
       h3 {
          font-size: 16px;
       }
 
-      p{
+      p {
          font-size: 14px;
       }
    }
 
-   .main-infusion-center{
+   .main-infusion-center {
       width: 235px;
    }
 
-   .main-info-section-content p{
+   .main-info-section-content p {
       width: 282px;
    }
 }
