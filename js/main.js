@@ -110,14 +110,16 @@ elementsWithHref.forEach((element) => {
 
 // download modal
 
-const openBtn = document.getElementById("openBtn");
+const openBtn = document.querySelectorAll("#openBtn");
 const overlay = document.getElementById("overlay");
 const modal = document.getElementById("modal");
 const closeModal = document.getElementById("close-modal");
 
-openBtn.addEventListener("click", () => {
-   overlay.style.display = "flex";
-   modal.style.display = "block";
+openBtn.forEach((el) => {
+   el.addEventListener("click", () => {
+      overlay.style.display = "flex";
+      modal.style.display = "block";
+   });
 });
 
 closeModal.addEventListener("click", () => {
