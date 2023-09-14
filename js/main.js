@@ -144,3 +144,7 @@ if(window.matchMedia("(max-width: 767px)").matches){
       });
    });
 }
+
+window.onload = function(){
+   document.querySelector(".main-header-list").backgroundImage = "url(../assets/images/blackBg.png)";
+}
