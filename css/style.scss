@@ -63,7 +63,7 @@ body {
    .mh_last_sec{
       position: relative;
       display: flex;
-      justify-content: right;
+      justify-content: flex-end;
 
       p {
          font-size: 12px;
@@ -1704,7 +1704,7 @@ html {
    }
 
    .main-infusion-center{
-      width: 760px;;
+      width: 760px;
    }
 
    .main-infusion-left p:not(:last-child) {
@@ -1991,7 +1991,8 @@ html {
       font-size: 15px !important;
    }
    .main-header {
-      top: -1px;
+      position: fixed;
+      top: 0; 
 
       &-logo {
          position: absolute;
