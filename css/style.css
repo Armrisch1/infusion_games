@@ -27,6 +27,10 @@ body {
   top: 0;
 }
 
+.main-header-list {
+  margin-left: 120px;
+}
+
 .watch-link-container {
   margin-top: 160px;
 }
@@ -1303,6 +1307,9 @@ html {
   }
 }
 @media only screen and (max-width: 1439px) {
+  .main-header-list {
+    margin-left: 78px;
+  }
   .main-header-btn {
     font-size: 14px;
   }
@@ -1481,6 +1488,9 @@ html {
   }
 }
 @media only screen and (max-width: 1279px) {
+  .main-header-list {
+    margin-left: 0 !important;
+  }
   .watch-link-container {
     margin: 60px auto 0;
   }
