@@ -52,7 +52,7 @@ const sections = [
    {
       element: document.querySelector(".cgbox"),
       color: "#FF5C00",
-      text: "graphics",
+      text: "CG",
    },
 ];
 

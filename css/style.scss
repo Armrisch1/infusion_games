@@ -19,6 +19,15 @@ body {
    margin-top: 80px!important;
 }
 
+.main-header {
+   position: fixed!important;
+   top: 0;
+}
+
+.main-menu{
+   top: 0;
+}
+
 .watch-link-container{
    margin-top: 160px;
 
@@ -303,10 +312,10 @@ html {
             color: #ffffff;
             text-transform: uppercase;
             bottom: 13px;
-            letter-spacing: 23px;
+            letter-spacing: 25px;
             left: 55%;
             transform: translate(-50%, 0);
-            font-size: 12px;
+            font-size: 14px;
          }
 
          a {
@@ -390,7 +399,7 @@ html {
       display: flex;
       // align-items: center;
       justify-content: space-between;
-      margin-top: 66px;
+      margin-top: 188px;
 
       &-texts {
          width: 40%;
@@ -1666,8 +1675,9 @@ html {
             }
 
             .headerDesc {
-               letter-spacing: 16px;
+               letter-spacing: 18px;
                left: 56.4%;
+               bottom: 10px;
             }
 
             &-logo {
@@ -2092,7 +2102,7 @@ html {
    .main-section {
       flex-direction: column;
       align-items: center;
-      margin-top: 60px;
+      margin-top: 142px;
 
       .main-section-imgBox .white-block-left-top {
          right: -40px;
@@ -2875,6 +2885,10 @@ html {
 }
 
 @media only screen and (max-width: 767px) {
+
+   .main-section {
+      margin-top: 120px;
+   }
 
    .main-heroes .main-heroes-header-cathulhu{
       top: 20px!important;
