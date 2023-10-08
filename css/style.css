@@ -2885,6 +2885,17 @@ html {
   .main-infusion-center div:nth-child(4) {
     width: 186px;
   }
+  .main-contacts-section-footer {
+    width: 289px;
+  }
+  .footer_top_arrow {
+    left: 0;
+    right: unset;
+    top: 136px;
+  }
+  .main-contacts-section .main-contacts-section-footer {
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
