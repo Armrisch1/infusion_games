@@ -37,10 +37,20 @@ const games = [
       color: "#ADF217",
       text: "games",
    },
+   {
+      element: document.querySelector(".main-cybr-car2"),
+      color: "#ADF217",
+      text: "games",
+   }
 ];
 const sections = [
    {
       element: document.querySelector(".unique-ads"),
+      color: "#118DFF",
+      text: "tech",
+   },
+   {
+      element: document.querySelector(".mobile_cola_image"),
       color: "#118DFF",
       text: "tech",
    },
@@ -50,7 +60,17 @@ const sections = [
       text: "web3",
    },
    {
+      element: document.querySelector(".mobile_cyberx_image"),
+      color: "#8F00FF",
+      text: "web3",
+   },
+   {
       element: document.querySelector(".cgbox"),
+      color: "#FF5C00",
+      text: "CG",
+   },
+   {
+      element: document.querySelector(".mobile_cyberx_image_sec"),
       color: "#FF5C00",
       text: "CG",
    },
