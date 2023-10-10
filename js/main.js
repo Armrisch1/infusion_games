@@ -167,4 +167,6 @@ if(window.matchMedia("(max-width: 767px)").matches){
 
 window.onload = function(){
    document.querySelector(".main-header-list").backgroundImage = "url(../assets/images/blackBg.png)";
+   // document.querySelector('.gif_container .preloader').style.display = 'none';
+   // document.querySelector('.gif_container .gid_preolader').setAttribute('src', './assets/gif/INFUSION_GIF.gif');
 }

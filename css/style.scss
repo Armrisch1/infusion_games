@@ -11,6 +11,19 @@ body {
    overflow-x: hidden;
 }
 
+.gif_container {
+   position: relative;
+   
+   .preloader {
+      top: 50%;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
+      height: auto;
+   }
+}
+
 .d-none{
    display: none;
 }
@@ -1003,6 +1016,8 @@ html {
                display: flex;
                align-items: center;
                justify-content: flex-end;
+               position: relative;
+               z-index: 99999;
 
                img {
                   margin-right: 15px;
