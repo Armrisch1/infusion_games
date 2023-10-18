@@ -840,7 +840,6 @@ html {
   color: #ffffff;
   font-size: 20px;
   text-align: right;
-  margin-top: 53px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -861,7 +860,8 @@ html {
 .main-heroes-footer-right-subtext {
   font-size: 14px;
   color: #898989;
-  margin-top: 15px;
+  margin-top: 53px;
+  margin-bottom: 15px;
   text-align: right;
 }
 .main-heroes-footer-progress {

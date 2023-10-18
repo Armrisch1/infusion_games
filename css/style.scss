@@ -1011,7 +1011,6 @@ html {
                color: #ffffff;
                font-size: 20px;
                text-align: right;
-               margin-top: 53px;
 
                display: flex;
                align-items: center;
@@ -1036,7 +1035,8 @@ html {
             &-subtext {
                font-size: 14px;
                color: #898989;
-               margin-top: 15px;
+               margin-top: 53px;
+               margin-bottom: 15px;
                text-align: right;
             }
          }
