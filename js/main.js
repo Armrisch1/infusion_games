@@ -1,21 +1,17 @@
-// old mobile menu
+// Download modal variables
+const openDownloadModalButtons = document.getElementsByName("open_download_modal");
+const overlay = document.getElementById("overlay");
+const modal = document.getElementById("modal");
+const closeModal = document.getElementById("close-modal");
 
+// Menu open / close variables
+const menuOpenBox = document.getElementById("open-logo");
+const menuCloseBox = document.getElementById("close-logo");
 const menuOpen = document.getElementById("menu_open");
 const menuClose = document.getElementById("menu_close");
 
-menuOpen.addEventListener("click", () => changeMenuState("open"));
-menuClose.addEventListener("click", () => changeMenuState("close"));
-
-function changeMenuState(_case) {
-   document.querySelector(".mobile_menu").style.display =
-      _case === "close" ? "none" : "flex";
-}
-
-// change logo color during scroll
-
-const logo = document.querySelector(".main-header-list-logo");
+// Scroll menu change functionality variables
 const text = document.querySelector(".headerDesc");
-
 const games = [
    {
       element: document.querySelector(".main-cyber"),
@@ -76,77 +72,50 @@ const sections = [
    },
 ];
 
-function handleScroll() {
-   let fill = "#ffffff";
-   for (const game of games) {
-      const { top, bottom } = game.element.getBoundingClientRect();
-      if (top < 150 && bottom >= 150) {
-         fill = game.color;
-         text.innerText = game.text;
-         break;
-      }
-   }
-   if (fill === "#ffffff") {
-      for (const section of sections) {
-         const { top, bottom } = section.element.getBoundingClientRect();
-         if (top < 150 && bottom >= 150) {
-            fill = section.color;
-            text.innerText = section.text;
-            break;
-         } else {
-            text.innerText = "";
-         }
-      }
-   }
-   document.querySelectorAll(".main-header-list-logo path").forEach((el) => {
-      el.style.fill = fill;
-   });
-}
-
-window.addEventListener("scroll", handleScroll);
-
-// main menu
-
-const menuOpenBox = document.getElementById("open-logo");
-const menuCloseBox = document.getElementById("close-logo");
-
-function changeMenuState(_case) {
-   document.querySelector(".main-menu").style.display =
-      _case === "close" ? "none" : "flex";
-}
-
-menuOpenBox.addEventListener("click", () => changeMenuState("open"));
-menuCloseBox.addEventListener("click", () => changeMenuState("close"));
 
 // Link divs for lazy dev (:D)
 const elementsWithHref = document.querySelectorAll("[data-href]");
+const white = '#ffffff';
 
-elementsWithHref.forEach((element) => {
+// Load menu background immediately
+window.onload = function(){
+   document.querySelector(".main-header-list").backgroundImage = "url(../assets/images/blackBg.png)";
+}
+
+// Handles logo color change during scroll
+window.addEventListener("scroll", handleScroll);
+
+// Handles menu open / close functionality
+[menuOpen, menuOpenBox].forEach(
+    element => element.addEventListener("click", () => changeMenuState("open"))
+);
+[menuClose, menuCloseBox].forEach(
+    element => element.addEventListener("click", () => changeMenuState("close"))
+);
+
+// Attach click event to elements with data-href
+elementsWithHref.forEach(element =>
    element.addEventListener(
       "click",
       () => (window.location.href = element.getAttribute("data-href"))
-   );
-});
+   )
+);
 
-// download modal
-
-const openBtn = document.querySelectorAll("#openBtn");
-const overlay = document.getElementById("overlay");
-const modal = document.getElementById("modal");
-const closeModal = document.getElementById("close-modal");
-
-openBtn.forEach((el) => {
-   el.addEventListener("click", () => {
+// Open download modal by click
+openDownloadModalButtons.forEach(element => {
+   element.addEventListener("click", () => {
       overlay.style.display = "flex";
       modal.style.display = "block";
    });
 });
 
+// Close download modal by click
 closeModal.addEventListener("click", () => {
    overlay.style.display = "none";
    modal.style.display = "none";
 });
 
+// Close modal by overlay click(when click out of modal)
 overlay.addEventListener("click", (event) => {
    if (event.target === overlay) {
       overlay.style.display = "none";
@@ -155,18 +124,63 @@ overlay.addEventListener("click", (event) => {
 });
 
 
-if(window.matchMedia("(max-width: 767px)").matches){
-   document.querySelectorAll(".main-menu a").forEach((el) => {
-      el.addEventListener("click", function(e){
-         e.preventDefault();
-         document.querySelector(".main-menu").style.display = "none";
-         window.location.href = el.getAttribute("href");
-      });
-   });
+// Attach click events to menu items in tablet and mobile versions, to close menu before scroll.
+if(window.matchMedia("(max-width: 1279px)").matches){
+
+   document
+       .querySelectorAll(".main-menu a")
+       .forEach(element => {
+               element.addEventListener("click", function(e){
+                  e.preventDefault();
+                  document.querySelector(".main-menu").style.display = "none";
+                  window.location.href = element.getAttribute("href");
+               });
+        });
 }
 
-window.onload = function(){
-   document.querySelector(".main-header-list").backgroundImage = "url(../assets/images/blackBg.png)";
-   // document.querySelector('.gif_container .preloader').style.display = 'none';
-   // document.querySelector('.gif_container .gid_preolader').setAttribute('src', './assets/gif/INFUSION_GIF.gif');
+// Functions
+
+/**
+ * Changes menu state
+ * @param {'open' | 'close'} _case
+ */
+function changeMenuState(_case) {
+   document.querySelector(".main-menu").style.display =
+       _case === "close" ? "none" : "flex";
+}
+
+/**
+ * Handles scroll and changes color of logo.
+ */
+function handleScroll() {
+   let fill = white;
+
+   for (const game of games) {
+      const { top, bottom } = game.element.getBoundingClientRect();
+
+      if (top < 150 && bottom >= 150) {
+         fill = game.color;
+         text.innerText = game.text;
+         break;
+      }
+   }
+
+   if (fill === white) {
+
+      for (const section of sections) {
+         const { top, bottom } = section.element.getBoundingClientRect();
+
+         if (top < 150 && bottom >= 150) {
+            fill = section.color;
+            text.innerText = section.text;
+            break;
+         }
+
+         text.innerText = "";
+      }
+   }
+
+   document
+       .querySelectorAll(".main-header-list-logo path")
+       .forEach((el) => el.style.fill = fill);
 }
