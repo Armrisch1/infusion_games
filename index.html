@@ -8,669 +8,945 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
     <link rel="preload" as="image" href="./assets/images/blackBg.png">
     <link rel="stylesheet" href="./css/style.css?ver=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" type="text/javascript"></script>
 </head>
 
 <body>
-<main class="main">
-    <!-- menu -->
-    <div class="main-menu">
-        <img id="close-logo" src="./assets/images/close.png" alt="close">
-        <div class="main-menu-games">
-            <h4>infusion games</h4>
-            <p><a href="#cyber">CYBER WARS</a></p>
-            <p><a href="#arena">Arena Heroes</a></p>
+    <main class="main">
+        <!-- menu -->
+        <div class="main-menu">
+            <img id="close-logo" src="./assets/images/close.png" alt="close">
+            <div class="main-menu-games">
+                <h4>infusion games</h4>
+                <p><a href="#cyber">CYBER WARS</a></p>
+                <p><a href="#arena">Arena Heroes</a></p>
+            </div>
+            <p class="main-menu-tech"><a href="#ads">infusion tech</a></p>
+            <p class="main-menu-web3"><a href="#cyberX">infusion web3</a></p>
+            <p class="main-menu-cg"><a href="#cgbox">infusion cg</a></p>
+            <div class="main-menu-otherLinks">
+                <p><a href="#about-us-sec">ABOUT</a></p>
+                <p><a href="#founders">FOUNDERS</a></p>
+                <p><a href="#contact">CONTACTS</a></p>
+            </div>
+            <button class="main-header-btn main-header-btn-right item_show_media" name="open_download_modal">download
+            </button>
         </div>
-        <p class="main-menu-tech"><a href="#ads">infusion tech</a></p>
-        <p class="main-menu-web3"><a href="#cyberX">infusion web3</a></p>
-        <p class="main-menu-cg"><a href="#cgbox">infusion cg</a></p>
-        <div class="main-menu-otherLinks">
-            <p><a href="#about-us-sec">ABOUT</a></p>
-            <p><a href="#founders">FOUNDERS</a></p>
-            <p><a href="#contact">CONTACTS</a></p>
-        </div>
-        <button class="main-header-btn main-header-btn-right item_show_media" name="open_download_modal">download
-        </button>
-    </div>
-    <!-- header -->
-    <header class="main-header container">
+        <!-- header -->
+        <header class="main-header container">
 
-        <img src="./assets/images/menu.svg" id="open-logo" class="main-header-logo" alt="menu">
+            <img src="./assets/images/menu.svg" id="open-logo" class="main-header-logo" alt="menu">
 
-        <div class="main-header-list">
-            <a href="#cyber">CYBER WARS</a>
-            <img class="main-header-list-line item_hidden_media" src="./assets/images/line.png" alt="line">
-            <a class="item_hidden_media" href="#arena">Arena Heroes</a>
-            <span class="headerDesc"></span>
-            <svg class="main-header-list-logo" width="220" height="64" viewBox="0 0 220 64" fill="none"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M179.003 4.08346C176.574 1.33463 172.526 -0.0136734 168.502 0.000104521C164.705 0.0131017 160.908 1.2381 158.489 3.67051C155.265 6.91079 154.288 12.0003 154.288 17.2509V19.7032L157.275 19.4112V44.7564L154.288 44.4644V47.3596C154.288 52.2225 155.135 56.3832 157.319 59.3301C159.508 62.2832 163.028 64 168.332 64C174.012 64 177.552 61.9305 179.667 58.7467C181.729 55.6437 182.426 51.4966 182.457 47.2181L185.441 47.5098C185.443 47.3124 185.445 47.1147 185.445 46.9167V16.6574L182.458 16.9494V16.2974C182.458 11.1419 181.507 6.91667 179.003 4.08346ZM176.99 17.4839L174.003 17.7759V17.0681C174.003 14.0512 173.526 11.845 172.604 10.3839C170.55 7.12623 165.494 7.55231 163.826 10.9363C163.114 12.3814 162.743 14.4109 162.743 17.0681V18.8767L165.73 18.5847V45.5829L162.743 45.2909V47.8797C162.743 50.5543 163.318 52.5896 164.302 53.9534C165.282 55.3135 166.674 56.0129 168.332 56.0129C170.032 56.0129 171.444 55.3128 172.435 53.953C173.428 52.5894 174.003 50.5543 174.003 47.8797V46.3917L176.99 46.6837V17.4839Z"
-                      fill="white"/>
-                <path
+            <div class="main-header-list">
+                <a href="#cyber">CYBER WARS</a>
+                <img class="main-header-list-line item_hidden_media" src="./assets/images/line.png" alt="line">
+                <a class="item_hidden_media" href="#arena">Arena Heroes</a>
+                <span class="headerDesc"></span>
+                <svg class="main-header-list-logo" width="220" height="64" viewBox="0 0 220 64" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M179.003 4.08346C176.574 1.33463 172.526 -0.0136734 168.502 0.000104521C164.705 0.0131017 160.908 1.2381 158.489 3.67051C155.265 6.91079 154.288 12.0003 154.288 17.2509V19.7032L157.275 19.4112V44.7564L154.288 44.4644V47.3596C154.288 52.2225 155.135 56.3832 157.319 59.3301C159.508 62.2832 163.028 64 168.332 64C174.012 64 177.552 61.9305 179.667 58.7467C181.729 55.6437 182.426 51.4966 182.457 47.2181L185.441 47.5098C185.443 47.3124 185.445 47.1147 185.445 46.9167V16.6574L182.458 16.9494V16.2974C182.458 11.1419 181.507 6.91667 179.003 4.08346ZM176.99 17.4839L174.003 17.7759V17.0681C174.003 14.0512 173.526 11.845 172.604 10.3839C170.55 7.12623 165.494 7.55231 163.826 10.9363C163.114 12.3814 162.743 14.4109 162.743 17.0681V18.8767L165.73 18.5847V45.5829L162.743 45.2909V47.8797C162.743 50.5543 163.318 52.5896 164.302 53.9534C165.282 55.3135 166.674 56.0129 168.332 56.0129C170.032 56.0129 171.444 55.3128 172.435 53.953C173.428 52.5894 174.003 50.5543 174.003 47.8797V46.3917L176.99 46.6837V17.4839Z"
+                        fill="white" />
+                    <path
                         d="M148.881 0.678269V20.2318L151.868 19.9398V44.2278L148.881 43.9358V63.4893H140.435V43.1101L143.422 43.4021V20.7655L140.435 21.0575V0.678269H148.881Z"
-                        fill="white"/>
-                <path
+                        fill="white" />
+                    <path
                         d="M119.51 20.7468C119.924 21.4297 120.428 22.1554 121.041 22.9535L123.821 22.6817C125.085 24.3636 126.837 26.3651 129.232 28.9811C131.57 31.5351 133.359 33.6073 134.721 35.4447C136.384 37.6891 137.55 40.2277 138.23 42.8946L135.165 42.5949C135.556 44.0452 135.804 45.5356 135.908 47.0391C136.222 51.5408 135.524 57.1733 132.18 60.5985C130.006 62.825 126.783 64 122.287 64C118.468 64 115.24 62.8936 112.966 60.7963C110.691 58.6982 109.382 55.6183 109.382 51.6939V45.158H117.847V48.8427C117.847 50.9136 118.217 52.7108 118.989 53.9867C119.757 55.2568 120.922 56.0128 122.534 56.0128C124.424 56.0128 125.674 55.4254 126.487 54.4429C127.085 53.7212 127.454 52.7778 127.661 51.6752C128.407 47.7106 127.424 44.5751 125.544 41.6543L128.727 41.9655C127.768 40.415 126.551 38.9304 125.197 37.4213C124.3 36.422 123.262 35.3104 122.061 34.0614L122.06 34.061C118.854 30.6954 115.971 27.5119 114.2 23.6223L111.343 23.9016C110.115 21.3076 109.382 18.4038 109.382 14.9198C109.382 12.1993 109.702 9.88357 110.344 7.94875C112.207 2.33245 117.662 -0.120095 123.086 0.166062C128.659 0.460119 132.726 3.0416 134.378 7.43434C135.304 9.89472 135.257 12.5642 135.211 15.1562C135.191 16.3066 135.191 16.3634 135.191 17.1746V17.1769C135.191 17.3253 135.191 17.499 135.191 17.7092H127.222V14.1979C127.222 12.7298 126.98 11.4354 126.474 10.4262C125.678 8.83776 124.068 8.09905 122.466 8.14711C120.744 8.19874 119.05 9.15737 118.401 10.9264C118.03 11.9362 117.847 13.248 117.847 14.9009C117.847 17.0066 118.259 18.6798 119.51 20.7468Z"
-                        fill="white"/>
-                <path
+                        fill="white" />
+                    <path
                         d="M104.644 0.678269V24.5564L107.631 24.2644V39.9032L104.644 39.6112V49.2456C104.644 52.8966 103.961 56.5858 101.855 59.3641C99.7448 62.148 96.2194 64 90.575 64C84.8896 64 81.3435 62.1482 79.2228 59.3643C77.1063 56.586 76.4232 52.8966 76.4232 49.2456V36.8523L79.4101 37.1443V27.0233L76.4232 27.3153V0.678269H84.8932V26.4872L87.8801 26.1953V37.9724L84.8932 37.6804V49.1364C84.8932 51.2522 85.2643 52.9701 86.1538 54.1574C87.0387 55.3386 88.4502 56.0118 90.575 56.0118C92.6578 56.0118 94.0487 55.3391 94.9236 54.1579C95.8032 52.9704 96.1742 51.2521 96.1742 49.1364V38.7832L99.1611 39.0752V25.0924L96.1742 25.3844V0.678269H104.644Z"
-                        fill="white"/>
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M187.762 63.4893V47.7368L190.749 48.0288V16.1388L187.762 16.4308V0.678269H199.337L202.198 15.0196L205.127 14.7332L212.038 49.3722V14.0577L209.051 14.3497V0.678269H217.013V13.5713L220 13.2793V50.8883L217.013 50.5963V63.4893H204.943L202.028 49.1314L205.075 49.4293L198.216 15.6556V48.7588L195.229 48.4668V63.4893H187.762ZM195.238 15.6999L195.229 15.6556V15.7008L195.238 15.6999Z"
-                      fill="white"/>
-                <path
+                        fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M187.762 63.4893V47.7368L190.749 48.0288V16.1388L187.762 16.4308V0.678269H199.337L202.198 15.0196L205.127 14.7332L212.038 49.3722V14.0577L209.051 14.3497V0.678269H217.013V13.5713L220 13.2793V50.8883L217.013 50.5963V63.4893H204.943L202.028 49.1314L205.075 49.4293L198.216 15.6556V48.7588L195.229 48.4668V63.4893H187.762ZM195.238 15.6999L195.229 15.6556V15.7008L195.238 15.6999Z"
+                        fill="white" />
+                    <path
                         d="M49.2837 0.678269H71.9429V9.18775H57.7445V27.8146H70.3979V36.3241H57.7445V63.4893H49.2837V0.678269Z"
-                        fill="white"/>
-                <path d="M8.44569 0.678269H0V63.4893H8.44569V0.678269Z" fill="white"/>
-                <path
+                        fill="white" />
+                    <path d="M8.44569 0.678269H0V63.4893H8.44569V0.678269Z" fill="white" />
+                    <path
                         d="M14.265 0.678269H25.8395L35.5536 49.3722V0.678269H43.5159V63.4893H31.4462L21.7322 14.6343V63.4893H14.265V0.678269Z"
-                        fill="white"/>
-            </svg>
+                        fill="white" />
+                </svg>
+                <a class="item_hidden_media" href="#about-us-sec">ABOUT</a>
+                <img class="main-header-list-line item_hidden_media" src="./assets/images/line.png" alt="line">
+                <a class="item_hidden_media" href="#contact">CONTACTS</a>
+                <a class="item_show_media" href="#arena">Arena Heroes</a>
+            </div>
 
-            <a class="item_hidden_media" href="#about-us-sec">ABOUT</a>
-            <img class="main-header-list-line item_hidden_media" src="./assets/images/line.png" alt="line">
-            <a class="item_hidden_media" href="#contact">CONTACTS</a>
-            <a class="item_show_media" href="#arena">Arena Heroes</a>
-        </div>
 
+            <div class="main-header-list main-header-listMobile">
+                <a href="">CYBER WARS</a>
+                <img class="main-header-list-logo" src="./assets/images/logo.png" alt="logo">
+                <a href="">Arena Heroes</a>
+            </div>
 
-        <div class="main-header-list main-header-listMobile">
-            <a href="">CYBER WARS</a>
-            <img class="main-header-list-logo" src="./assets/images/logo.png" alt="logo">
-            <a href="">Arena Heroes</a>
-        </div>
+            <div class="mobile_menu" style="display: none">
+                <img class="mobile_menu-logotype" src="./assets/images/logo.png" alt="logo">
+                <img id="menu_close" src="./assets/images/close.png" class="mobile_menu-close" alt="close">
+                <ul class="mobile_menu-list">
+                    <li><a href="">INFUSION GAMES</a></li>
+                    <li><a href="">CYBER WARS</a></li>
+                    <li><a href="">ARENA HEROES</a></li>
+                    <li><a href="">DOWNLOAD</a></li>
+                    <li><a href="">SOLUTIONS</a></li>
+                    <li>
+                        <ul>
+                            <li><a href="about-us-sec">ABOUT</a></li>
+                            <li><a href="">CONTACTS</a></li>
+                        </ul>
+                    </li>
 
-        <div class="mobile_menu" style="display: none">
-            <img class="mobile_menu-logotype" src="./assets/images/logo.png" alt="logo">
-            <img id="menu_close" src="./assets/images/close.png" class="mobile_menu-close" alt="close">
-            <ul class="mobile_menu-list">
-                <li><a href="">INFUSION GAMES</a></li>
-                <li><a href="">CYBER WARS</a></li>
-                <li><a href="">ARENA HEROES</a></li>
-                <li><a href="">DOWNLOAD</a></li>
-                <li><a href="">SOLUTIONS</a></li>
-                <li>
-                    <ul>
-                        <li><a href="about-us-sec">ABOUT</a></li>
-                        <li><a href="">CONTACTS</a></li>
-                    </ul>
-                </li>
+                </ul>
+            </div>
 
-            </ul>
-        </div>
-
-        <button class="main-header-btn main-header-btn-right item_hidden_media" name="open_download_modal">download
-        </button>
-        <img id="menu_open" class="main-header-menuIcon" src="./assets/images/burg.svg" alt="burg">
-    </header>
-    <!-- header section -->
-    <section class="main-section container">
-        <div class="main-section-texts">
-            <h3>We create video games</h3>
-            <p>and develop technological solutions _</p>
-            <div class="main-section-texts-btns">
-                <button class="main-section-texts-btns-btn main-section-texts-btns-btn-left"
+            <button class="main-header-btn main-header-btn-right item_hidden_media" name="open_download_modal">download
+            </button>
+            <img id="menu_open" class="main-header-menuIcon" src="./assets/images/burg.svg" alt="burg">
+        </header>
+        <!-- header section -->
+        <section class="main-section container">
+            <div class="main-section-texts">
+                <h3>We create video games</h3>
+                <p>and develop technological solutions _</p>
+                <div class="main-section-texts-btns">
+                    <button class="main-section-texts-btns-btn main-section-texts-btns-btn-left"
                         data-href="#cyber">infusion games
-                </button>
-            </div>
-        </div>
-        <div class="main-section-imgBox">
-            <!-- <div class="gif_container"> -->
-            <!-- <img class="preloader" src="./assets/images/preloader.gif" alt="loader"> -->
-            <img class="gid_preolader" src="./assets/gif/INFUSION_GIF.gif" alt="section-img">
-            <!-- </div> -->
-            <div class="white-block white-block-left-top"></div>
-            <div class="white-block white-right-center"></div>
-            <div class="white-block white-block-left-bottom"></div>
-            <img class="main-section-imgBox-section-mob" src="./assets/images/section-img-mobile.png"
-                 style="display: none" alt="section-img">
-            <img class="main-section-imgBox-section-mobTwo" src="./assets/images/smmobileSectino.png"
-                 style="display: none" alt="section-img">
-        </div>
-    </section>
-    <!-- infusion section -->
-    <div id="about-us-sec"></div>
-    <section class="container about_part">
-        <div class="main-infusion">
-            <div class="main-infusion-left">
-                <h3 class="section-title">About _</h3>
-                <h3><span>INFUSION</span> is a dynamic and confident IT firm, headquartered in Tallinn, Estonia.</h3>
-                <div class="main-infusion-center">
-                    <div>
-                        <h3>Who We Are _</h3>
-                        <p>We're gaming enthusiasts and tech specialists crafting video games, cutting-edge techs, and
-                            more worldwide.</p>
-                    </div>
-                    <div>
-                        <h3>Our Mission _</h3>
-                        <p>We set the industry standard by harnessing
-                            the collective power of our diverse departments.
-                        </p>
-                    </div>
-                    <div>
-                        <h3>Our Journey _</h3>
-                        <p>Founded in 2019, INFUSION was born with a clear ambition: To stand at the forefront of
-                            technology and video game development.</p>
-                    </div>
-                    <div>
-                        <h3>Our Vision _</h3>
-                        <p>We strive for excellence in all
-                            we do, fostering a team of highly skilled individuals and constantly creating new
-                            opportunities.
-                        </p>
-                    </div>
+                    </button>
                 </div>
             </div>
-            <div class="main-infusion-img"><img src="./assets/images/inf-min.png" alt="UI"></div>
-        </div>
-
-    </section>
-
-    <!-- cyber game section -->
-    <section id="cyber" class="main-cyber container">
-        <div class="main-cyber-left">
-            <div class="cb-bg-color">
-                <div></div>
-                <img class="main-cyber-left-logo" src="./assets/images/cwsmall.png" alt="cyber logo">
+            <div class="main-section-imgBox">
+                <!-- <div class="gif_container"> -->
+                <!-- <img class="preloader" src="./assets/images/preloader.gif" alt="loader"> -->
+                <!-- <img class="gid_preolader" src="./assets/gif/INFUSION_GIF.gif" alt="section-img"> -->
+                <video class="infusion_video-header" autoplay muted loop>
+                    <source src="assets/gif/infusion_mainlogo.mp4">
+                </video>
+                <!-- </div> -->
+                <div class="white-block white-block-left-top"></div>
+                <div class="white-block white-right-center"></div>
+                <div class="white-block white-block-left-bottom"></div>
+                <img class="main-section-imgBox-section-mob" src="./assets/images/section-img-mobile.png"
+                    style="display: none" alt="section-img">
+                <img class="main-section-imgBox-section-mobTwo" src="./assets/images/smmobileSectino.png"
+                    style="display: none" alt="section-img">
             </div>
-
-            <h3>
-                In our flagship 3D Shooter «Cyber Wars» by INFUSION GAMES the old world is history,
-                replaced by sprawling cities straight out of a cyberpunk fantasy _
-            </h3>
-            <p class="main-cyber-left-text main-cyber-left-first">
-                These cities are ruled by mega-corporations that have basically become their own governments, making up
-                the rules as they go.
-            </p>
-            <p class="main-cyber-left-text">
-                Now, everyone's either working for these corporate giants or trying to make it as freelancers.
-                Freelancers are basically free-spirited mercenaries, and when they bite the dust, it doesn't cost the
-                bigwigs an extra dime.
-            </p>
-
-            <p class="main-cyber-right-subtext main-cyber-right-subtext-custom item_show_media">PvPMMO 3D Shooter
-            </p>
-
-            <div class="main-cyber-left-google-play">
-                <p class="main-cyber-left-google-play-header">Available</p>
-                <div class="main-cyber-left-google-play-box"
-                     data-href="https://developer.cloud.unity3d.com/share/share.html?shareId=e9HENmZ-XI0NHwdyUbkM86v4CH1xo6W7PDsbow1O4nw">
-                    <img src="./assets/images/gplay.svg" alt="gplay">
-                    <div class="main-cyber-left-google-play-box-content">
-                        <span>Get it on</span>
-                        <p>Google Play</p>
+        </section>
+        <!-- infusion section -->
+        <div id="about-us-sec"></div>
+        <section class="container about_part">
+            <div class="main-infusion">
+                <div class="main-infusion-left">
+                    <h3 class="section-title">About _</h3>
+                    <h3><span>INFUSION</span> is a dynamic and confident IT firm, headquartered in Tallinn, Estonia.
+                    </h3>
+                    <div class="main-infusion-center">
+                        <div>
+                            <h3>Who We Are _</h3>
+                            <p>We're gaming enthusiasts and tech specialists crafting video games, cutting-edge techs,
+                                and
+                                more worldwide.</p>
+                        </div>
+                        <div>
+                            <h3>Our Mission _</h3>
+                            <p>We set the industry standard by harnessing
+                                the collective power of our diverse departments.
+                            </p>
+                        </div>
+                        <div>
+                            <h3>Our Journey _</h3>
+                            <p>Founded in 2019, INFUSION was born with a clear ambition: To stand at the forefront of
+                                technology and video game development.</p>
+                        </div>
+                        <div>
+                            <h3>Our Vision _</h3>
+                            <p>We strive for excellence in all
+                                we do, fostering a team of highly skilled individuals and constantly creating new
+                                opportunities.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="main-cyber-left-logos">
-                <p class="main-cyber-left-logos-header">Coming soon</p>
-                <div class="main-cyber-left-logos-imgs">
-                    <img src="./assets/images/cybrStore.svg" alt="UI">
-                    <img src="./assets/images/cybrWEB.svg" alt="UI">
-                    <img src="./assets/images/cybrNS.svg" alt="UI">
-                </div>
-            </div>
-        </div>
-        <div class="main-cyber-right">
-            <img class="main-cyber-right-bgimage item_show_media" src="./assets/images/cyberwarsmovile.png"
-                 alt="UI">
-            <img class="main-cyber-right-bgimage item_hidden_media" src="./assets/images/cyberbg1-min.png" alt="UI">
-            <p class="main-cyber-right-watch"><img src="./assets/images/playvideo.png" alt="play">Watch <a
-                    href="https://youtu.be/HJEzX8Gd_vk ">trailer</a></p>
-            <p class="main-cyber-right-subtext">PvPMMO 3D Shooter</p>
-        </div>
-        <div class="main-cyber-right-car-text-mobile item_show_media">
-            <h3>As the player, you step into the shoes of a young and fearless freelancer _</h3>
-            <p>Your mission? To tackle contracts from
-                mega-corporations and build your own crew, transforming from a lone wolf into the leader
-                of a formidable coalition of freelancers.
-            </p>
-        </div>
-    </section>
-    <!-- cyber car section -->
-    <section class="main-cybr-car container">
-        <img class="main-cybr-car-bgimg item_hidden_media" src="./assets/images/cybcarbg-min.png" alt="UI">
-        <img class="main-cybr-car-bgimg item_show_media" src="./assets/images/car-section_bg_tablet.jpg"
-             alt="tablet">
-        <div class="main-cybr-car-header">
-            <h3>As the player, you step into the shoes of a young and fearless freelancer _</h3>
-            <p>Your mission? To tackle contracts from
-                mega-corporations and build your own crew, transforming from a lone wolf into the leader
-                of a formidable coalition of freelancers.
-            </p>
-            <div class="cb-bg-color">
-                <div></div>
-                <img src="./assets/images/cwsmall.png" alt="logo">
+                <div class="main-infusion-img"><img src="./assets/images/inf-min.png" alt="UI"></div>
             </div>
 
-        </div>
-        <div class="main-cybr-car-footer">
-            <div class="main-cybr-car-footer-box">
-                <span class="main-cybr-car-footer-box-line"></span>
-                <div class="main-cybr-car-footer-box-count">
-                    <p>30+</p>
-                    <span>vehicles</span>
+        </section>
+
+        <!-- cyber game section -->
+        <section id="cyber" class="main-cyber container">
+            <div class="main-cyber-left">
+                <div class="cb-bg-color">
+                    <img class="main-cyber-left-logo" src="./assets/images/slider_logo.png" alt="cyber logo">
                 </div>
-            </div>
-            <div class="main-cybr-car-footer-box">
-                <span class="main-cybr-car-footer-box-line"> </span>
-                <div class="main-cybr-car-footer-box-count">
-                    <p>100+</p>
-                    <span>guns</span>
-                </div>
-            </div>
-            <div class="main-cybr-car-footer-box">
-                <span class="main-cybr-car-footer-box-line"></span>
-                <div class="main-cybr-car-footer-box-count">
-                    <p>4</p>
-                    <span>corporations</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="main-cybr-car2 container">
-        <div class="main-cybr-car2-heroes-footer item_show_media">
-            <div class="main-cybr-car2-heroes-footer-right">
-                <p class="main-cybr-car2-heroes-footer-right-watch"><img src="./assets/images/playvideo.png"
-                                                                         alt="play">Watch
-                    <a href="https://youtu.be/aC_xXDS37wA">trailer</a>
+
+                <h3>
+                    In our flagship 3D Shooter «Cyber Wars» by INFUSION GAMES the old world is history,
+                    replaced by sprawling cities straight out of a cyberpunk fantasy _
+                </h3>
+                <p class="main-cyber-left-text main-cyber-left-first">
+                    These cities are ruled by mega-corporations that have basically become their own governments, making
+                    up
+                    the rules as they go.
                 </p>
-            </div>
-            <div class="main-cybr-car2-heroes-footer-left">
-                <div class="main-cybr-car2-heroes-footer-left-google-play">
-                    <div class="main-cybr-car2-heroes-footer-left-google-play-box">
+                <p class="main-cyber-left-text">
+                    Now, everyone's either working for these corporate giants or trying to make it as freelancers.
+                    Freelancers are basically free-spirited mercenaries, and when they bite the dust, it doesn't cost
+                    the
+                    bigwigs an extra dime.
+                </p>
+
+                <p class="main-cyber-right-subtext main-cyber-right-subtext-custom item_show_media">PvPMMO 3D Shooter
+                </p>
+
+                <!-- <div class="main-cyber-left-google-play">
+                    <p class="main-cyber-left-google-play-header">Available</p>
+                    <div class="main-cyber-left-google-play-box"
+                        data-href="https://developer.cloud.unity3d.com/share/share.html?shareId=e9HENmZ-XI0NHwdyUbkM86v4CH1xo6W7PDsbow1O4nw">
                         <img src="./assets/images/gplay.svg" alt="gplay">
-                        <div class="main-cybr-car2-heroes-footer-left-google-play-box-content"
-                             data-href="https://developer.cloud.unity3d.com/share/share.html?shareId=e9HENmZ-XI0NHwdyUbkM86v4CH1xo6W7PDsbow1O4nw">
+                        <div class="main-cyber-left-google-play-box-content">
                             <span>Get it on</span>
                             <p>Google Play</p>
                         </div>
                     </div>
-                    <p class="main-cybr-car2-heroes-footer-left-google-play-header">Available</p>
-                </div>
-                <div class="main-cybr-car2-heroes-footer-left-logos">
-                    <div class="main-cybr-car2-heroes-footer-left-logos-imgs">
-                        <img src="./assets/images/cybrStore.svg" alt="UI">
+                </div> -->
+                <div class="main-cyber-left-logos">
+                    <div class="main-cyber-left-logos-imgs">
+                        <img src="./assets/images/playmarket.svg" alt="UI" width="157">
+                        <a href="https://apps.apple.com/in/app/arena-heroes-online-rpg/id6448993010">
+                            <img src="./assets/images/cybrStore.svg" alt="UI" class="store"></a>
                         <img src="./assets/images/cybrNS.svg" alt="UI">
-                        <img src="./assets/images/cybrWEB.svg" alt="UI">
+                        <a href="https://yandex.com/games/app/242923">
+                            <img src="./assets/images/webplatform.png" alt="UI" width="157" height="50"></a>
                     </div>
-                    <p class="main-cybr-car2-heroes-footer-left-logos-header">Coming soon</p>
+                </div>
+            </div>
+            <div class="main-cyber-right">
+                <!-- <img class="main-cyber-right-bgimage item_show_media" src="./assets/images/cyberwarsmovile.png"
+                    alt="UI"> -->
+                <div class="main-cyber-right video_box">
+                    <div class="main-cyber-video video-boxes-1"></div>
+                    <div class="main-cyber-video video-boxes-2"></div>
+                    <div class="main-cyber-video video-boxes-3"></div>
+                    <video class="infusion_video" autoplay muted loop>
+                        <source src="assets/gif/infussion_video.mp4">
+                    </video>
+                </div>
+                <!-- <img class="main-cyber-right-bgimage item_hidden_media" src="./assets/images/cyberbg1-min.png" alt="UI"> -->
+                <p class="main-cyber-right-watch"><img src="./assets/images/playvideo.png" alt="play">Watch <a
+                        href="https://youtu.be/HJEzX8Gd_vk ">trailer</a></p>
+                <p class="main-cyber-right-subtext">PvPMMO 3D Shooter</p>
+            </div>
+            <div class="main-cyber-right-car-text-mobile item_show_media">
+                <h3 class="cyber-h3">As the player, you step into the shoes of a young and fearless freelancer _</h3>
+                <p class="cyber-p">Your mission? To tackle contracts from
+                    mega-corporations and build your own crew, transforming from a lone wolf into the leader
+                    of a formidable coalition of freelancers.
+                </p>
+            </div>
+        </section>
+        <!-- cyber car section -->
+        <section class="main-cybr-car container swiper">
+            <div class="main-cybr-car-header-roof"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="main-cybr-car-bgimg item_hidden_media" src="./assets/images/cyber-car_ 1.png" alt="UI">
+                    <img class="main-cybr-car-bgimg item_show_media" src="./assets/images/cyber-car_ 1.png"
+                        alt="tablet">
+                    <div class="main-cybr-car-header">
+                        <h3>As the player, you step into the shoes of a young and fearless freelancer _</h3>
+                        <p>Your mission? To tackle contracts from
+                            mega-corporations and build your own crew, transforming from a lone wolf into the leader
+                            of a formidable coalition of freelancers.
+                        </p>
+                        <div class="cb-bg-color">
+                            <div></div>
+                            <img src="./assets/images/slider_logo.png" alt="logo">
+                        </div>
+
+                    </div>
+                    <div class="main-cybr-car-footer">
+                        <div class="main-cybr-car-footer-box">
+                            <span class="main-cybr-car-footer-box-line"></span>
+                            <div class="main-cybr-car-footer-box-count">
+                                <p>30+</p>
+                                <span>vehicles</span>
+                            </div>
+                        </div>
+                        <div class="main-cybr-car-footer-box">
+                            <span class="main-cybr-car-footer-box-line"> </span>
+                            <div class="main-cybr-car-footer-box-count">
+                                <p>100+</p>
+                                <span class="cyber-span-guns">guns</span>
+                            </div>
+                        </div>
+                        <div class="main-cybr-car-footer-box">
+                            <span class="main-cybr-car-footer-box-line"></span>
+                            <div class="main-cybr-car-footer-box-count">
+                                <p>4</p>
+                                <span>corporations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="main-cybr-car-bgimg item_hidden_media" src="./assets/images/cyber-car_2.png" alt="UI">
+                    <img class="main-cybr-car-bgimg item_show_media" src="./assets/images/cyber-car_2.png" alt="tablet">
+                    <div class="main-cybr-car-header">
+                        <h3>As the player, you step into the shoes of a young and fearless freelancer _</h3>
+                        <p>Your mission? To tackle contracts from
+                            mega-corporations and build your own crew, transforming from a lone wolf into the leader
+                            of a formidable coalition of freelancers.
+                        </p>
+                        <div class="cb-bg-color">
+                            <div></div>
+                            <img src="./assets/images/slider_logo.png" alt="logo">
+                        </div>
+
+                    </div>
+                    <div class="main-cybr-car-footer">
+                        <div class="main-cybr-car-footer-box">
+                            <span class="main-cybr-car-footer-box-line"></span>
+                            <div class="main-cybr-car-footer-box-count">
+                                <p>30+</p>
+                                <span>vehicles</span>
+                            </div>
+                        </div>
+                        <div class="main-cybr-car-footer-box">
+                            <span class="main-cybr-car-footer-box-line"> </span>
+                            <div class="main-cybr-car-footer-box-count">
+                                <p>100+</p>
+                                <span>guns</span>
+                            </div>
+                        </div>
+                        <div class="main-cybr-car-footer-box">
+                            <span class="main-cybr-car-footer-box-line"></span>
+                            <div class="main-cybr-car-footer-box-count">
+                                <p>4</p>
+                                <span>corporations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="main-cybr-car-bgimg item_hidden_media" src="./assets/images/cyber-car_3.png" alt="UI">
+                    <img class="main-cybr-car-bgimg item_show_media" src="./assets/images/cyber-car_3.png" alt="tablet">
+                    <div class="main-cybr-car-header">
+                        <h3>As the player, you step into the shoes of a young and fearless freelancer _</h3>
+                        <p>Your mission? To tackle contracts from
+                            mega-corporations and build your own crew, transforming from a lone wolf into the leader
+                            of a formidable coalition of freelancers.
+                        </p>
+                        <div class="cb-bg-color">
+                            <div></div>
+                            <img src="./assets/images/slider_logo.png" alt="logo">
+                        </div>
+
+                    </div>
+                    <div class="main-cybr-car-footer">
+                        <div class="main-cybr-car-footer-box">
+                            <span class="main-cybr-car-footer-box-line"></span>
+                            <div class="main-cybr-car-footer-box-count">
+                                <p>30+</p>
+                                <span>vehicles</span>
+                            </div>
+                        </div>
+                        <div class="main-cybr-car-footer-box">
+                            <span class="main-cybr-car-footer-box-line"> </span>
+                            <div class="main-cybr-car-footer-box-count">
+                                <p>100+</p>
+                                <span>guns</span>
+                            </div>
+                        </div>
+                        <div class="main-cybr-car-footer-box">
+                            <span class="main-cybr-car-footer-box-line"></span>
+                            <div class="main-cybr-car-footer-box-count">
+                                <p>4</p>
+                                <span>corporations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img class="main-cybr-car-bgimg item_hidden_media" src="./assets/images/cyber-car_4.png" alt="UI">
+                    <img class="main-cybr-car-bgimg item_show_media" src="./assets/images/cyber-car_4.png" alt="tablet">
+                    <div class="main-cybr-car-header">
+                        <h3>As the player, you step into the shoes of a young and fearless freelancer _</h3>
+                        <p>Your mission? To tackle contracts from
+                            mega-corporations and build your own crew, transforming from a lone wolf into the leader
+                            of a formidable coalition of freelancers.
+                        </p>
+                        <div class="cb-bg-color">
+                            <div></div>
+                            <img src="./assets/images/slider_logo.png" alt="logo">
+                        </div>
+
+                    </div>
+                    <div class="main-cybr-car-footer">
+                        <div class="main-cybr-car-footer-box">
+                            <span class="main-cybr-car-footer-box-line"></span>
+                            <div class="main-cybr-car-footer-box-count">
+                                <p>30+</p>
+                                <span>vehicles</span>
+                            </div>
+                        </div>
+                        <div class="main-cybr-car-footer-box">
+                            <span class="main-cybr-car-footer-box-line"> </span>
+                            <div class="main-cybr-car-footer-box-count">
+                                <p>100+</p>
+                                <span>guns</span>
+                            </div>
+                        </div>
+                        <div class="main-cybr-car-footer-box">
+                            <span class="main-cybr-car-footer-box-line"></span>
+                            <div class="main-cybr-car-footer-box-count">
+                                <p>4</p>
+                                <span>corporations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="main-cybr-car-footer-roof"></div>
+        </section>
+        <div class="main-cybr-car2 container">
+            <div class="main-cybr-car2-heroes-footer item_show_media">
+                <div class="main-cybr-car2-heroes-footer-right">
+                    <p class="main-cybr-car2-heroes-footer-right-watch"><img src="./assets/images/playvideo.png"
+                            alt="play">Watch
+                        <a href="https://youtu.be/aC_xXDS37wA">trailer</a>
+                    </p>
+                </div>
+                <div class="main-cybr-car2-heroes-footer-left">
+                    <div class="main-cybr-car2-heroes-footer-left-google-play">
+                        <div class="main-cybr-car2-heroes-footer-left-google-play-box">
+                            <img src="./assets/images/gplay.svg" alt="gplay">
+                            <div class="main-cybr-car2-heroes-footer-left-google-play-box-content"
+                                data-href="https://developer.cloud.unity3d.com/share/share.html?shareId=e9HENmZ-XI0NHwdyUbkM86v4CH1xo6W7PDsbow1O4nw">
+                                <span>Get it on</span>
+                                <p>Google Play</p>
+                            </div>
+                        </div>
+                        <p class="main-cybr-car2-heroes-footer-left-google-play-header">Available</p>
+                    </div>
+                    <div class="main-cybr-car2-heroes-footer-left-logos">
+                        <div class="main-cybr-car2-heroes-footer-left-logos-imgs">
+                            <a href="https://apps.apple.com/in/app/arena-heroes-online-rpg/id6448993010">
+                                <img src="./assets/images/cybrStore.svg" alt="UI">
+                            </a>
+                            <img src="./assets/images/cybrNS.svg" alt="UI">
+                            <img src="./assets/images/cybrWEB.svg" alt="UI">
+                        </div>
+                        <p class="main-cybr-car2-heroes-footer-left-logos-header">Coming soon</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <!-- arena heroes game img section -->
-    <div id="arena" class="main-arena container">
-        <img src="./assets/images/arenabg-min.png" alt="UI">
-        <div class="arena_black_bottom"></div>
-    </div>
-    <!-- arena heroes game section -->
-    <section class="main-heroes container">
-        <div class="main-heroes-header">
-            <img class="main-heroes-header-slice" src="./assets/images/heros/slice.png" alt="UI">
-            <img class="main-heroes-header-cathulhu" src="./assets/images/heros/cathulhu.png" alt="UI">
-            <img class="main-heroes-header-heroeslogo" src="./assets/images/heroeslogo.png" alt="UI">
-            <p>Once upon a time, in a parallel universe not-so-far-away, heroes had a brilliant idea: they'd battle it
-                out _</p>
-            <div>s</div>
+        <!-- arena heroes game img section -->
+        <div id="arena" class="main-arena container">
+            <img src="./assets/images/arenabg-min.png" alt="UI">
+            <div class="arena_black_bottom"></div>
         </div>
-        <div class="main-heroes-center">
-            <div>
+        <!-- arena heroes game section -->
+        <section class="main-heroes container">
+            <div class="main-heroes-header">
+                <!-- <img class="main-heroes-header-slice" src="./assets/images/heros/slice.png" alt="UI"> -->
+                <!-- <img class="main-heroes-header-cathulhu" src="./assets/images/heros/cathulhu.png" alt="UI"> -->
+                <img class="main-heroes-header-conor" src="assets/images/conor.gif" alt="conor">
+                <img class="main-heroes-header-jeff" src="assets/images/output-onlinegiftools (1).gif" alt="jeff">
+                <img class="main-heroes-header-samuel" src="assets/images/output-onlinegiftools.gif" alt="samuel">
+                <img class="main-heroes-header-heroeslogo" src="./assets/images/heroeslogo.png" alt="UI">
+                <p>Once upon a time, in a parallel universe not-so-far-away, heroes had a brilliant idea: they'd battle
+                    it
+                    out _</p>
+                <div>s</div>
+            </div>
+            <div class="main-heroes-center">
+                <div>
                     <span>
-                        <p>Welcome to our new RPG battler game "Arena Heroes", 
-                            where we've thrown together a wild mix of heroes and villains from every corner of culture. 
-                            In this zany universe, nothing is quite what it seems. Our main character, a former tech whiz, 
-                            once crafted an AI assistant for a data-storing company. After getting the boot, his corrupted 
+                        <p>Welcome to our new RPG battler game "Arena Heroes",
+                            where we've thrown together a wild mix of heroes and villains from every corner of culture.
+                            In this zany universe, nothing is quite what it seems. Our main character, a former tech
+                            whiz,
+                            once crafted an AI assistant for a data-storing company. After getting the boot, his
+                            corrupted
                             copy wound up in the cloud, turning everything into a hilarious parody of the real world.
                         </p>
-    
+
                         <p class="main-heroes-center-last-p">
-                            Get ready for an adventure with countless worlds, quirky characters, artifacts, abilities, 
+                            Get ready for an adventure with countless worlds, quirky characters, artifacts, abilities,
                             and ways to level up. It's a gaming adventure like no other!
                         </p>
                     </span>
-                <div>
-                    <img class="tablet_splited_heroes d-none" src="./assets/images/heros/tablet_charcters.png"
-                         alt="splited heroes">
-                    <img class="main-heroes-center-knight" src="./assets/images/heros/knight.png" alt="UI">
+                    <div>
+                        <!-- <img class="tablet_splited_heroes d-none" src="./assets/images/heros/tablet_charcters.png " -->
+                        <!-- alt="splited heroes"> -->
+                        <!-- <img class="main-heroes-center-knight" src="./assets/images/heros/knight.png" alt="UI"> -->
+                    </div>
+                </div>
+                <!-- <img class="main-heroes-center-shoot" src="./assets/images/shoot.png" alt="UI" style="display: none;"> -->
+                </p>
+            </div>
+            <div class="main-heroes-center-mobile d-none">
+                <div class="mh_first_sec">
+                    <p class="main-heroes-center-wel-p">
+                        <strong> Welcome to our new RPG battler game "Arena Heroes",</strong> where <br>
+                        we've thrown together a wild mix of heroes and villains <br>
+                        from every corner of culture. In this zany universe, <br>
+                        nothing is quite what it seems Our main character, <br>
+                        a former tech whiz, once crafted an AI assistant <br>
+                        for a data-storing company.
+                    </p>
+                    <!-- <img class="main-heroes-center-knight" src="./assets/images/heros/knight.png" alt="UI"> -->
+                </div>
+                <p class="mh_center_p">
+                    After getting the
+                    boot, his corrupted copy wound <br> up in the cloud, turning everything into a hilarious <br> parody of the
+                    real
+                    world.
+                </p>
+                <div class="mh_last_sec">
+                    <!-- <img src="./assets/images/heros/shoot.png" alt="shoot"> -->
+                    <p>Get ready for an adventure with countless worlds,<br> quirky characters, artifacts,
+                        abilities,
+                        and ways to <br> level up. It's a gaming adventure like no other!
+                    </p>
                 </div>
             </div>
-            <img class="main-heroes-center-shoot" src="./assets/images/shoot.png" alt="UI">
-            </p>
-        </div>
-        <div class="main-heroes-center-mobile d-none">
-            <div class="mh_first_sec">
-                <p>
-                    Welcome to our new RPG battler game "Arena Heroes",
-                    where we've thrown together a wild mix of heroes and
-                    villains from every corner of culture.
-                </p>
-                <img class="main-heroes-center-knight" src="./assets/images/heros/knight.png" alt="UI">
-            </div>
-            <p class="mh_center_p">
-                In this zany universe, nothing is quite what it seems.
-                Our main character, a former tech whiz, once crafted an AI assistant for a
-                data-storing company. After getting the
-                boot, his corrupted copy wound up in the cloud, turning everything into a hilarious parody of the real
-                world.
-            </p>
-            <div class="mh_last_sec">
-                <img src="./assets/images/heros/shoot.png" alt="shoot">
-                <p>Get ready for <br> an adventure with <br> countless worlds,<br> quirky characters,<br> artifacts,
-                    abilities,<br>
-                    and ways to level up.<br> It's a gaming<br> adventure like<br> no other!
-                </p>
-            </div>
-        </div>
-        <div class="main-heroes-footer">
-            <div class="main-heroes-footer-left">
-                <div class="main-heroes-footer-left-google-play">
-                    <p class="main-heroes-footer-left-google-play-header">Available</p>
-                    <div class="main-heroes-footer-left-google-play-box">
-                        <img src="./assets/images/gplay.svg" alt="gplay">
-                        <div class="main-heroes-footer-left-google-play-box-content"
-                             data-href="https://play.google.com/store/apps/details?id=fighting.rpg.adventure.multiplayer.wars.pvp.battles.arena.heroes">
-                            <span>Get it on</span>
-                            <p>Google Play</p>
+            <div class="main-heroes-footer">
+                <div class="main-heroes-footer-left">
+                    <!-- <div class="main-heroes-footer-left-google-play">
+                        <p class="main-heroes-footer-left-google-play-header"></p> -->
+                    <!-- <div class="main-heroes-footer-left-google-play-box">
+                            <img src="./assets/images/gplay.svg" alt="gplay">
+                            <div class="main-heroes-footer-left-google-play-box-content"
+                                data-href="https://play.google.com/store/apps/details?id=fighting.rpg.adventure.multiplayer.wars.pvp.battles.arena.heroes">
+                                <span>Get it on</span>
+                                <p>Google Play</p>
+                            </div>              
+                        </div> -->
+                    <!-- <a href="#">
+                            <img src="./assets/images/gogleplay.svg" alt="UI" width="157">
+                        </a> -->
+                    <!-- </div> -->
+                    <div class="main-heroes-footer-left-logos">
+                        <!-- <p class="main-heroes-footer-left-logos-header">Available</p> -->
+                        <div class="main-heroes-footer-left-logos-imgs">
+                            <a href="#" class="playmark-p">
+                                <img class="web-platform-image-heroes" src="./assets/images/playmarketvalid.png" alt="UI" width="115"
+                                    class="playmark"></a>
+                            <a href="https://apps.apple.com/in/app/arena-heroes-online-rpg/id6448993010">
+                                <img class="web-platform-image-heroes" src="./assets/images/cybrStore.svg" alt="UI" width="115"></a>
+                            <a href="https://yandex.com/games/app/242923">
+                                <img class="web-platform-image-heroes" src="./assets/images/webplatform.png" alt="UI"></a>
                         </div>
                     </div>
                 </div>
-                <div class="main-heroes-footer-left-logos">
-                    <p class="main-heroes-footer-left-logos-header">Coming soon</p>
-                    <div class="main-heroes-footer-left-logos-imgs">
-                        <img src="./assets/images/cybrStore.svg" alt="UI">
-                        <img src="./assets/images/cybrWEB.svg" alt="UI">
+                <div class="main-heroes-footer-right">
+                    <p class="main-heroes-footer-right-subtext">MMO 2D RPG Battler</p>
+                    <p class="main-heroes-footer-right-watch"><img src="./assets/images/triugolnik.png" alt="play">Watch
+                        <a href="https://www.youtube.com/watch?v=aC_xXDS37wA">trailer</a>
+                    </p>
+                    <p class="main-heroes-footer-right-watch"><img src="./assets/images/triugolnik.png" alt="play">Watch
+                        <a href="https://www.youtube.com/watch?v=aC_xXDS37wA">gameplay</a>
+                    </p>
+                </div>
+            </div>
+            <!-- <img class="main-heroes-bgimg" src="./assets/images/heroes.png" alt="UI" sty> -->
+            <div class="main-cybr-car-footer main-heroes-footer-progress">
+                <div class="main-cybr-car-footer-box">
+                    <span class="main-cybr-car-footer-box-line"> </span>
+                    <div class="main-cybr-car-footer-box-count">
+                        <p>300+</p>
+                        <span class="big-size">heroes</span>
+                    </div>
+                </div>
+                <div class="main-cybr-car-footer-box">
+                    <span class="main-cybr-car-footer-box-line"></span>
+                    <div class="main-cybr-car-footer-box-count">
+                        <p>30+</p>
+                        <span class="big-size">locations</span>
+                    </div>
+                </div>
+                <div class="main-cybr-car-footer-box main-heroes-sopp">
+                    <span class="main-cybr-car-footer-box-line"></span>
+                    <div class="main-cybr-car-footer-box-count count_fifty_part">
+                        <p>500+</p>
+                        <span class="big-size">items</span>
                     </div>
                 </div>
             </div>
-            <div class="main-heroes-footer-right">
-                <p class="main-heroes-footer-right-subtext">MMO 2D RPG Battler</p>
-                <p class="main-heroes-footer-right-watch"><img src="./assets/images/playvideo.png" alt="play">Watch
-                    <a href="https://www.youtube.com/watch?v=aC_xXDS37wA">trailer</a>
-                </p>
+            <div class="heroes-table">
+                <img src="assets/images/heroes-table.png" alt="ht" class="heroes-table-img">
             </div>
-        </div>
-        <img class="main-heroes-bgimg" src="./assets/images/heroes.png" alt="UI">
-        <div class="main-cybr-car-footer main-heroes-footer-progress">
-            <div class="main-cybr-car-footer-box">
-                <span class="main-cybr-car-footer-box-line"> </span>
-                <div class="main-cybr-car-footer-box-count">
-                    <p>300+</p>
-                    <span class="big-size">heroes</span>
-                </div>
-            </div>
-            <div class="main-cybr-car-footer-box">
-                <span class="main-cybr-car-footer-box-line"></span>
-                <div class="main-cybr-car-footer-box-count">
-                    <p>30+</p>
-                    <span class="big-size">locations</span>
-                </div>
-            </div>
-            <div class="main-cybr-car-footer-box">
-                <span class="main-cybr-car-footer-box-line"></span>
-                <div class="main-cybr-car-footer-box-count count_fifty_part">
-                    <p>500+</p>
-                    <span class="big-size">items</span>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- info section 1-->
-    <div id="ads"></div>
-    <section class="main-info-section unique-ads container">
-        <div class="main-info-section-content">
-            <h3>Unique Ads System _</h3>
-            <p class="main-info-section-content-desc">Adaptive Personalized User In-Gameplay Ads</p>
+        </section>
+        <!-- info section 1-->
+        <div id="ads"></div>
+        <section class="main-info-section unique-ads container">
+            <div class="main-info-section-content">
+                <h3>Unique Ads System _</h3>
+                <p class="main-info-section-content-desc">Adaptive Personalized User In-Gameplay Ads</p>
 
-            <div class="main-info-section-content-texts unique-texts">
-                <p>Our <span>unique</span> in-game ad replacement system uses either static or dynamic visual
-                    content, such as
-                    glowing advertisements or moving holograms, to seamlessly integrate into the game.
+                <div class="main-info-section-content-texts unique-texts">
+                    <p>Our <span>unique</span> in-game ad replacement system uses either static or dynamic visual
+                        content, such as
+                        glowing advertisements or moving holograms, to seamlessly integrate into the game.
 
-                </p>
-                <p> This system can even be customized to the user's preferences in real-time,<span>without the
+                    </p>
+                    <p> This system can even be customized to the user's preferences in real-time,<span>without the
                             need</span> to
-                    update
-                    the application in the Store.</p>
-            </div>
+                        update
+                        the application in the Store.</p>
+                </div>
 
-            <p class="watch-link-container">
-                <img src="./assets/images/black_arrow.png" alt="black arrow"><span>Watch</span>
-                <a href="https://www.youtube.com/watch?v=zRjLkuEMdqw">how it works</a>
-            </p>
-
-            <!-- <p class="main-info-section-content-link"><span>Watch how it works</span></p> -->
-        </div>
-        <div class="main-info-section-img item_hidden_media">
-            <img src="./assets/images/pepsi-min.png" alt="UI">
-        </div>
-    </section>
-    <div class="mobile_cola_image item_show_media">
-        <img src="./assets/images/cola_with_white_top.jpg" alt="cola tablet">
-    </div>
-    <!-- info section 2-->
-    <div id="cyberX"></div>
-    <section class="main-info-section cyberX container">
-        <div class="main-info-section-content">
-            <div class="main-info-section-content-header">
-                <h3>CyberX _</h3>
-                <p class="main-info-section-content-header-desc">Multiplayer <br> WEB3 video game</p>
-            </div>
-            <div class="main-info-section-content-texts cyberX-texts">
-                <p>Certainly, here's a revised version that highlights the concept of using your game engine to
-                    transition existing games to the Web3 world:</p>
-                <p> CyberX doesn't exist yet. What does exist is the groundbreaking idea of using our game engines to
-                    catapult our games into the Web3 universe. You'll soon be able to experience the thrill of battling
-                    players worldwide in immersive online arenas, with cryptocurrency and online tournaments as part of
-                    the action.</p>
-                <p>Thanks to <span>INFUSION WEB3</span> collaboration with partners and their cutting-edge SDK, we're
-                    all set to transition from Web2 to Web3, revolutionizing the gaming landscape. Get ready for a
-                    future where gaming and crypto collide!</p>
-            </div>
-
-            <!-- <p class="main-info-section-content-link"><span>Watch how it works</span></p> -->
-        </div>
-        <div class="main-info-section-img item_hidden_media">
-            <img src="./assets/images/cyberX-min.png" alt="">
-        </div>
-
-    </section>
-    <div class="mobile_cyberx_image item_show_media">
-        <img src="./assets/images/cyberx_with_white_top.jpg" alt="cyberx tablet">
-    </div>
-    <!-- info section 3-->
-    <div id="cgbox"></div>
-    <section class="main-info-section cgbox container">
-        <div class="main-info-section-content">
-            <div class="main-info-section-content-header">
-                <h3>CG _</h3>
-                <p class="main-info-section-content-header-desc">Developing high quality <br> graphics in-house</p>
-            </div>
-
-
-            <div class="main-info-section-content-texts cgbox-texts">
-                <p><span>INFUSION CG</span> currently operates as a dynamic in-house team, responsible for
-                    producing
-                    visually stunning CG trailers for the flagship client <span>INFUSION GAMES</span>. Our expertise
-                    lies in
-                    leveraging cutting-edge technologies, creative storytelling, and artistic mastery
-                    to bring digital worlds to life.
+                <p class="watch-link-container">
+                    <img src="./assets/images/black_arrow.png" alt="black arrow"><span>Watch</span>
+                    <a href="https://www.youtube.com/watch?v=zRjLkuEMdqw">how it works</a>
                 </p>
-                <p> The CG department now aims to expand
-                    as a separate business, catering to
-                    a diverse range of clients within the entertainment and gaming industries.</p>
+
+                <!-- <p class="main-info-section-content-link"><span>Watch how it works</span></p> -->
             </div>
-
-            <p class="watch-link-container mt-80">
-                <img src="./assets/images/black_arrow.png" alt="black arrow"><span>Watch</span>
-                <a href="https://www.youtube.com/watch?v=HJEzX8Gd_vk">how it works</a>
-            </p>
-        </div>
-        <div class="main-info-section-img item_hidden_media">
-            <img src="./assets/images/CG-min.png" alt="UI">
-        </div>
-    </section>
-    <div class="mobile_cyberx_image_sec item_show_media">
-        <img src="./assets/images/cyberx_sec_with_white_top.jpg" alt="cyberx sec tablet">
-    </div>
-    <!-- info section 4-->
-    <div id="career"></div>
-    <section class="main-info-section careers-section container">
-        <div class="main-info-section-content">
-            <h3>Careers _</h3>
-            <p class="main-info-section-content-desc">We provide the best opportunities for remote work, and remain
-                focused on health and safety.</p>
-
-            <div class="main-info-section-content-texts careers-texts">
-                <p>We now have room for talented professionals, who don't want
-                    to get bored.
-                </p>
+            <div style="display: none;">
+                <img src="./assets/images/cola-min.png" alt="UI" class="interval_photo">
+                <img src="./assets/images/neom-min.png" alt="UI" class="interval_photo">
+                <img src="./assets/images/game-min.png" alt="UI" class="interval_photo">
             </div>
+            <div class="main-info-section-img item_hidden_media slider">
+                <img id="slider_main_img" src="./assets/images/pepsi-min.png" alt="UI" class="interval_photo">
+            </div>
+            <div class="mobile_cola_image item_show_media">
+                <img id="slider_main_img_mobile" src="./assets/images/cola_with_white_top.jpg" alt="cola tablet">
+            </div>
+        </section>
+        <section class="main-info-section web-platform container">
+            <div class="main-info-section-content">
+                <div class="main-info-section-content-header">
+                    <h3>Web platform _</h3>
+                    <p class="main-info-section-content-header-desc web-platform-inf"><strong>INFUSION TECH</strong> pioneers a versatile
+                        web publishing platform, <br> seamlessly integrating into websites and portals.</p>
+                </div>
+                <div class="main-info-section-content-texs web-platform-text">
+                    <p>
+                        <strong>For game developers</strong>, it offers a single <br>
+                        integration to place their games across <br>
+                        thousands of sites, boosting audience and <br>
+                        income. The platform provides advanced <br>
+                        features such as advertising SDKs, a <br>
+                        proprietary payment system, game<br>
+                        currencies, and authentication methods.
+                    </p><br><br>
+                    <p>
+                        <strong>For portals</strong>, it grants access to a premium <br>
+                        game catalog, enhancing user retention and <br>
+                        driving extra revenue through in-game goods <br>
+                        sales and ad views. The integration options <br>
+                        include advertising SDKs, diverse payment <br>
+                        methods, proprietary game currencies, and <br>
+                        authentication methods, ensuring a <br>
+                        comprehensive and innovative solution <br>
+                        tailored to each entity.
+                    </p>
+                </div>
+                <div class="main-info-section-content web-platform-right-side">
+                    <div class="main-info-section web-platform-simple">
+                        <h4>
+                            Simple integration <br>
+                            / Partners Games
+                        </h4>
+                        <p>
+                            Integration with the <br>
+                            platform (authentication, <br>
+                            ads SDK, payments, etc.)
+                        </p>
+                        <img src="./assets/images/Vector 2.svg" alt="vector" class="main-info-section vector-one">
+                        <img src="./assets/images/minvector_1.svg" alt="vector" class="main-info-section vector-one-min">
+                    </div>
+                    <div class="main-info-section web-platform-deep">
+                        <h4>
+                            Deep integration <br>
+                            / Partners Games
+                        </h4>
+                        <p>
+                            <strong>INFUSION</strong>, a publisher with <br>
+                            integration expertise, manages <br>
+                            communication and aids developers <br>
+                            in selecting the ideal platform <br>
+                            for their game's target audience.
+                        </p>
+                        <img src="./assets/images/Vector 1.svg" alt="vector" class="main-info-section vector-two">
+                        <img src="./assets/images/minvictor_2.svg" alt="vector" class="main-info-section vector-two-min">
+                    </div>
+                    <div class="main-info-section web-platform-image">
+                        <img src="./assets/images/web platform img.png" alt="web">
+                    </div>
+                    <div class="main-info-section web-platform-various">
+                        <img src="./assets/images/Vector 4.svg" alt="" class="main-info-section-arrow">
+                        <img src="./assets/images/Vector.svg" alt="" class="main-info-section-icon-one">
+                        <img src="./assets/images/minvecrot_3.svg" alt="" class="vector-three-min">
+                        <p>
+                            <strong>Various</strong> websites and <br>
+                            platforms automatically <br>
+                            get new games via iFrame. <br>
 
-            <p class="main-info-section-content-link">Is it You? Contact us!
-                <br>
-                <span data-href="mailto:@infusion.com">work@infusion.com</span>
-            </p>
-        </div>
-        <div class="main-info-section-img item_hidden_media">
-            <img src="./assets/images/careers_new.png" alt="UI">
-        </div>
-    </section>
-    <div class="mobile_cyberx_image_third item_show_media">
-        <img src="./assets/images/cyberx_third_with_white_top.jpg" alt="cyberx third tablet">
-    </div>
-    <!-- founders section -->
-    <div id="founders"></div>
-    <section class="main-founders-section container">
-        <img class="main-founders-section-infimg" src="./assets/images/infusion.png" alt="UI">
-        <div class="main-founders-section-content">
-            <h4>Founders _</h4>
-            <div class="main-founders-section-content-founders">
-                <div class="main-founders-section-content-first">
-                    <p><span class="mobile-user-name">Nikolay <br/> Shubin _</span><span>Has 10 years of
-                                experience</span>
-                        leading
-                        and increasing growth
-                        as CEO in small and medium businesses</p>
-                    <div>
-                        <img src="./assets/images/nikol-min.png" alt="UI">
-                        <p>Nikolay <br>
-                            <span>Shubin _</span>
+                        </p>
+                    </div>
+                    <div class="main-info-section web-platform-related">
+                        <img src="./assets/images/Vector 3.svg" alt="" class="main-info-section-arrow-two">
+                        <img src="./assets/images/minvecotr_4.svg" alt="" class="vector-four-min">
+                        <img src="./assets/images/Vector (1).svg" alt="" class="main-info-section-icon-two">
+                        <p>
+                            <strong>Game-related</strong> websites and <br>
+                            platforms get new games and <br>
+                            can use their own currency, <br>
+                            authorization, advertising <br>
+                            SDK, etc.
+
                         </p>
                     </div>
                 </div>
-                <img class="founders-inf-mobile" src="./assets/images/infMobile.png" alt="UI">
-                <div class="main-founders-section-content-second">
-                    <div>
-                        <img src="./assets/images/serg-min.png" alt="UI">
-                        <p>Sergey <br>
-                            <span>Belyaev _</span>
-                        </p>
-                    </div>
-                    <p><span class="mobile-user-name">Sergey <br/> Belyaev _</span><span>Has 25 years of
+
+            </div>
+
+
+        </section>
+
+        <!-- info section 2-->
+        <div id="cyberX"></div>
+        <section class="main-info-section cyberX container">
+            <div class="main-info-section-content">
+                <div class="main-info-section-content-header">
+                    <h3>CyberX _</h3>
+                    <p class="main-info-section-content-header-desc">WEB3-based <br> tournaments</p>
+                </div>
+                <div class="main-info-section-content-texts cyberX-texts">
+                    <p><strong>CyberX doesn't exist yet.</strong><br>
+                        What does exist is the groundbreaking <br>
+                        idea of using our game engines to catapult <br>
+                        our games into the Web3 universe.</p>
+                    <p> You'll soon be able to experience the <br>
+                        thrill of battling players worldwide <br>
+                        in immersive online arenas an online <br>
+                        tournaments as part of the action.</p>
+                    <p>Thanks to <strong>INFUSION WEB3</strong> collaboration <br>
+                        with partners and their cutting-edge <br>
+                        SDK, we're all set to transition from <br>
+                        Web2 to Web3, revolutionizing the <br>
+                        gaming landscape. </p>
+
+                    <strong>
+                        Get ready for a future where gaming <br>
+                        and crypto collide!
+                    </strong>
+                </div>
+
+                <!-- <p class="main-info-section-content-link"><span>Watch how it works</span></p> -->
+            </div>
+            <div class="main-info-section-img item_hidden_media">
+                <img src="./assets/images/cyberx-photo.png" alt="">
+            </div>
+
+        </section>
+        <div class="mobile_cyberx_image item_show_media">
+            <img src="./assets/images/cyberx_tablet.png" alt="cyberx tablet">
+        </div>
+        <!-- info section 3-->
+        <div id="cgbox"></div>
+        <section class="main-info-section cgbox container">
+            <div class="main-info-section-content">
+                <div class="main-info-section-content-header">
+                    <h3>CG _</h3>
+                    <p class="main-info-section-content-header-desc">Developing high quality <br> graphics in-house</p>
+                </div>
+
+
+                <div class="main-info-section-content-texts cgbox-texts">
+                    <p><span>INFUSION CG</span> currently operates as a dynamic in-house team, responsible for
+                        producing
+                        visually stunning CG trailers for the flagship client <span>INFUSION GAMES</span>. Our expertise
+                        lies in
+                        leveraging cutting-edge technologies, creative storytelling, and artistic mastery
+                        to bring digital worlds to life.
+                    </p>
+                    <p> The CG department now aims to expand
+                        as a separate business, catering to
+                        a diverse range of clients within the entertainment and gaming industries.</p>
+                </div>
+
+                <p class="watch-link-container mt-80">
+                    <img src="./assets/images/black_arrow.png" alt="black arrow"><span>Watch</span>
+                    <a href="https://www.youtube.com/watch?v=HJEzX8Gd_vk">how it works</a>
+                </p>
+            </div>
+            <div class="main-info-section-img item_hidden_media">
+                <img src="./assets/images/CG-min.png" alt="UI">
+            </div>
+        </section>
+        <div class="mobile_cyberx_image_sec item_show_media">
+            <img src="./assets/images/cyberx_sec_with_white_top.jpg" alt="cyberx sec tablet">
+        </div>
+        <!-- info section 4-->
+        <div id="career"></div>
+        <section class="main-info-section careers-section container">
+            <div class="main-info-section-content">
+                <h3>Careers _</h3>
+                <p class="main-info-section-content-desc">We provide the best opportunities for remote work, and remain
+                    focused on health and safety.</p>
+
+                <div class="main-info-section-content-texts careers-texts">
+                    <p>We now have room for talented professionals, who don't want
+                        to get bored.
+                    </p>
+                </div>
+
+                <p class="main-info-section-content-link">Is it You? Contact us!
+                    <br>
+                    <span data-href="mailto:@infusion.com">work@infusion.com</span>
+                </p>
+            </div>
+            <div class="main-info-section-img item_hidden_media">
+                <img src="./assets/images/careers_new.png" alt="UI">
+            </div>
+        </section>
+        <div class="mobile_cyberx_image_third item_show_media">
+            <img src="./assets/images/cyberx_third_with_white_top.jpg" alt="cyberx third tablet">
+        </div>
+        <!-- founders section -->
+        <div id="founders"></div>
+        <section class="main-founders-section container">
+            <img class="main-founders-section-infimg" src="./assets/images/infusion.png" alt="UI">
+            <div class="main-founders-section-content">
+                <h4>Founders _</h4>
+                <div class="main-founders-section-content-founders">
+                    <div class="main-founders-section-content-first">
+                        <p><span class="mobile-user-name">Nikolay <br /> Shubin _</span><span>Has 10 years of
                                 experience</span>
-                        in development and
-                        game dev. Opened
-                        the Wargaming Moscow</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- contacts section -->
-    <div id="contact"></div>
-    <section class="main-contacts-section container">
-        <div class="main-contacts-section-header">
-            <h4>
-                Contacts _
-            </h4>
-            <p>We are open to collaboration
-                and cooperation. Contact us.</p>
-            <img src="./assets/images/inf4.png" alt="UI">
-        </div>
-        <div class="main-contacts-section-content">
-            <div>
-                <h5>General</h5>
-                <a href="mailto:general@infusion.games">general@infusion.games</a>
-            </div>
-            <div>
-                <h5>Work</h5>
-                <a href="mailto:work@infusion.games">work@infusion.games</a>
-            </div>
-            <div>
-                <h5>Press</h5>
-                <a href="mailto:press@infusion.games">press@infusion.games</a>
-            </div>
-        </div>
-        <div class="main-contacts-section-footer">
-            <a href="https://m.facebook.com/infusion.games"><img src="./assets/images/web-sites/Frame 21.png"
-                                                                 alt="UI"></a>
-            <a href="https://www.artstation.com/infusiongames"><img src="./assets/images/web-sites/Frame 22.png"
-                                                                    alt="UI"></a>
-            <a href="https://ee.linkedin.com/company/infusion-games"><img
-                    src="./assets/images/web-sites/Frame 23.png" alt="UI"></a>
-            <a href="https://instagram.com/infusion.games?igshid=MzRlODBiNWFlZA=="><img
-                    src="./assets/images/web-sites/Frame 27.png" alt="UI"></a>
-            <a href="https://twitter.com/infusion_games"><img src="./assets/images/web-sites/Frame 28.png"
-                                                              alt="UI"></a>
-            <a href="https://youtube.com/@infusiongames8875"><img src="./assets/images/web-sites/Frame 29.png"
-                                                                  alt="UI"></a>
-            <a href="https://www.reddit.com/user/infusiongames/"><img src="./assets/images/web-sites/Frame 31.png"
-                                                                      alt="UI"></a>
-            <a href="https://discord.gg/RZV9Peewed"><img src="./assets/images/web-sites/discord.png"
-                                                         alt="UI"></a>
-            <img class="footer_top_arrow" src="./assets/images/Polygon.png" data-href="#" alt="polygon">
-        </div>
-    </section>
-    <!-- footer-->
-    <footer class="main-footer">
-        <img class="main-footer-logo" src="./assets/images/logo.png" alt="logo">
-        <a href="./assets/privacy_policy.pdf" target="_blank">Privacy policy</a>
-        <p>Copyright 2023 © Infusion Games</p>
-    </footer>
-</main>
-<!-- download modal -->
-<div id="overlay" class="modal-wrapper">
-    <div id="modal" class="modal-wrapper-download">
-        <img id="close-modal" class="modal-wrapper-download-close" src="./assets/images/close.png" alt="close">
-        <div class="modal-wrapper-download-content">
-            <img src="./assets/images/mimg1-min.png" alt="UI">
+                            leading
+                            and increasing growth
+                            as CEO in small and medium businesses</p>
+                        <div class="name-fir">
+                            <img src="./assets/images/nikol-min.png" alt="UI">
+                            <p class="">Nikolay <br>
+                                <span>Shubin _</span>
+                            </p>
+                        </div>
 
-            <div class="modal-wrapper-download-content-logos">
-                <div class="modal-wrapper-download-content-logos-images">
-                    <img data-href="https://play.google.com/store/apps/details?id=cyber.wars.shooter.guns.action.racing.flying.cars.pvp"
-                         src="./assets/images/gplay2.svg" alt="UI">
-                    <img src="./assets/images/cybrWEB.svg" alt="UI">
-                    <img src="./assets/images/cybrStore.svg" alt="UI">
-                    <img src="./assets/images/cybrNS.svg" alt="UI">
-                </div>
-                <div class="modal-wrapper-download-content-logos-texts">
-                    <p>Available</p>
-                    <p>Coming soon</p>
-                </div>
-            </div>
-        </div>
-        <div class="modal-wrapper-download-content">
-            <img class="modal-wrapper-download-content-img" src="./assets/images/mimg2.png" alt="UI">
-            <div class="modal-wrapper-download-content-logos">
-                <div class="modal-wrapper-download-content-logos-images">
-                    <img data-href="https://play.google.com/store/apps/details?id=fighting.rpg.adventure.multiplayer.wars.pvp.battles.arena.heroes"
-                         src="./assets/images/gplay2.svg" alt="UI">
-                    <img src="./assets/images/cybrWEB.svg" alt="UI">
-                    <img src="./assets/images/cybrNS.svg" alt="UI">
-                </div>
-                <div class="modal-wrapper-download-content-logos-texts">
-                    <p>Available</p>
-                    <p>Coming soon</p>
-                </div>
-            </div>
+                        <a href="https://www.linkedin.com/in/nik-shubin/">linkedin</a>
 
+                    </div>
+                    <img class="founders-inf-mobile" src="./assets/images/infMobile.png" alt="UI">
+                    <div class="main-founders-section-content-second">
+                        <div class="name-sec">
+                            <img class="second" src="./assets/images/serg-min.png" alt="UI">
+                            <p class="name-sec">Sergey <br>
+                                <span>Belyaev _</span>
+                            </p>
+                        </div>
+                        <p class="founder-end"><span class="mobile-user-name">Sergey <br /> Belyaev _</span><span>Has 25 years of
+                                experience</span>
+                            in development and
+                            game dev. Opened
+                            the Wargaming Moscow</p>
+
+                        <a href="https://www.linkedin.com/in/sbelyaev/">linkedin</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contacts section -->
+        <div id="contact"></div>
+        <section class="main-contacts-section container">
+            <div class="main-contacts-section-header">
+                <h4>
+                    Contacts _
+                </h4>
+                <p>We are open to collaboration
+                    and cooperation. Contact us.</p>
+                <img src="./assets/images/inf4.png" alt="UI">
+            </div>
+            <div class="main-contacts-section-content">
+                <div>
+                    <h5>General</h5>
+                    <a href="mailto:general@infusion.games">general@infusion.games</a>
+                </div>
+                <div>
+                    <h5>Work</h5>
+                    <a href="mailto:work@infusion.games">work@infusion.games</a>
+                </div>
+                <div>
+                    <h5>Press</h5>
+                    <a href="mailto:press@infusion.games">press@infusion.games</a>
+                </div>
+            </div>
+            <div class="main-contacts-section-footer">
+                <a href="https://m.facebook.com/infusion.games"><img src="./assets/images/web-sites/Frame 21.png"
+                        alt="UI"></a>
+                <a href="https://www.artstation.com/infusion"><img src="./assets/images/web-sites/Frame 22.png"
+                        alt="UI"></a>
+                <a href="https://ee.linkedin.com/company/infusion-games"><img
+                        src="./assets/images/web-sites/Frame 23.png" alt="UI"></a>
+                <a href="https://instagram.com/infusion.games?igshid=MzRlODBiNWFlZA=="><img
+                        src="./assets/images/web-sites/Frame 27.png" alt="UI"></a>
+                <a href="https://twitter.com/infusion_games"><img src="./assets/images/web-sites/Frame 28.png"
+                        alt="UI"></a>
+                <a href="https://www.youtube.com/@infusiongamesofficial"><img
+                        src="./assets/images/web-sites/Frame 29.png" alt="UI"></a>
+                <a href="https://www.reddit.com/user/infusiongames/"><img src="./assets/images/web-sites/Frame 31.png"
+                        alt="UI"></a>
+                <a href="https://discord.gg/RZV9Peewed"><img src="./assets/images/web-sites/discord.png" alt="UI"></a>
+                <!-- <img class="footer_top_arrow" src="./assets/images/Polygon.png" data-href="#" alt="polygon"> -->
+            </div>
+        </section>
+        <!-- footer-->
+        <footer class="main-footer">
+            <img class="main-footer-logo" src="./assets/images/logo.png" alt="logo">
+            <a href="./assets/privacy_policy.pdf" target="_blank">Privacy policy</a>
+            <p>Copyright <span id="year">2024</span> © Infusion Games</p>
+        </footer>
+    </main>
+    <!-- download modal -->
+    <div id="overlay" class="modal-wrapper">
+        <div id="modal" class="modal-wrapper-download">
+            <img id="close-modal" class="modal-wrapper-download-close" src="./assets/images/close.png" alt="close">
+            <div class="modal-wrapper-download-content">
+                <img src="./assets/images/slider_logo.png" alt="UI">
+
+                <div class="modal-wrapper-download-content-logos">
+                    <div class="modal-wrapper-download-content-logos-images">
+                        <img data-href="https://play.google.com/store/apps/details?id=cyber.wars.shooter.guns.action.racing.flying.cars.pvp"
+                            src="./assets/images/gplay2.svg" alt="UI">
+                        <img src="./assets/images/cybrWEB.svg" alt="UI">
+                        <img src="./assets/images/cybrStore.svg" alt="UI">
+                        <img src="./assets/images/cybrNS.svg" alt="UI">
+                    </div>
+                    <div class="modal-wrapper-download-content-logos-texts">
+                        <p>Available</p>
+                        <p>Coming soon</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-wrapper-download-content">
+                <img class="modal-wrapper-download-content-img" src="./assets/images/mimg2.png" alt="UI">
+                <div class="modal-wrapper-download-content-logos">
+                    <div class="modal-wrapper-download-content-logos-images">
+                        <img data-href="https://play.google.com/store/apps/details?id=fighting.rpg.adventure.multiplayer.wars.pvp.battles.arena.heroes"
+                            src="./assets/images/gplay2.svg" alt="UI">
+                        <img src="./assets/images/cybrWEB.svg" alt="UI">
+                        <img src="./assets/images/cybrNS.svg" alt="UI">
+                    </div>
+                    <div class="modal-wrapper-download-content-logos-texts">
+                        <p>Available</p>
+                        <p>Coming soon</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-</div>
 
-<script src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
