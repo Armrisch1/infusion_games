@@ -427,7 +427,7 @@ html {
   height: 300px;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -2px;
   bottom: 0;
   margin: auto 0;
 }
@@ -1956,7 +1956,6 @@ html {
     text-decoration: none;
     border-bottom: 1px solid #ffffff;
   }
-  .mobile_cola_image img,
   .mobile_cyberx_image img,
   .mobile_cyberx_image_sec img,
   .mobile_cyberx_image_third img {
@@ -2336,7 +2335,7 @@ html {
     margin-top: 90px;
   }
   .main-heroes-footer-progress .big-size {
-    font-size: 9px !important;
+    font-size: 9px;
   }
   .main-heroes-footer-progress .main-cybr-car-footer-box:not(:last-child) {
     margin-bottom: 80px;
@@ -3002,16 +3001,41 @@ html {
      object-fit: cover;
 }
 
+.unique-ads {
+  margin-top: 200px;
+}
+
+@media only screen and (max-width: 1279px) {
+  .unique-ads {
+    width: 100% !important;
+    height: 1200px !important;
+    position: relative;
+  }
+  #slider_main_img,
+  #slider_main_img_mobile {
+    width: 100% !important;
+    position: absolute !important;
+    top: 550px !important;
+    left: 0px !important;
+  }
+}
 .web-platform {
   position: relative;
-  height: 1350px;
+  width: 100%;
+  height: 1000px;
 }
-.web-platform h3 {
+.web-platform .web-platform-inf {
+  width: 1000px !important;
+}
+.web-platform .main-info-section-content-header {
+  position: relative;
+}
+.web-platform .main-info-section-content-header h3 {
   position: absolute;
   top: 130px;
   width: 390px;
 }
-.web-platform .main-info-section-content-header-desc {
+.web-platform .main-info-section-content-header .main-info-section-content-header-desc {
   position: absolute;
   width: 1800px;
   font-weight: 500;
@@ -3019,17 +3043,19 @@ html {
   top: 130px;
 }
 .web-platform .web-platform-text {
-  width: 100%;
-  margin-top: 250px;
-  font-size: 23px;
+  width: 525px;
+  margin-top: 200px;
+  font-size: 18px;
   letter-spacing: 1px;
   line-height: 2em;
   font-weight: 500;
 }
 .web-platform .web-platform-right-side {
-  width: 100%;
-  position: relative;
-  top: 100px;
+  width: 900px;
+  height: 480px;
+  position: absolute;
+  top: 450px;
+  right: 50px;
 }
 .web-platform .web-platform-right-side .vector-one-min,
 .web-platform .web-platform-right-side .vector-two-min,
@@ -3047,8 +3073,8 @@ html {
   justify-content: center;
   width: 200px;
   height: 65px;
-  top: -750px;
-  left: 730px;
+  top: 0px;
+  left: 0px;
 }
 .web-platform .web-platform-right-side .web-platform-simple p {
   padding-inline: 10px;
@@ -3056,16 +3082,17 @@ html {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: -670px;
-  left: 700px;
+  top: 80px;
+  left: -30px;
   width: 300px;
   line-height: 2em;
   font-weight: 600;
 }
 .web-platform .web-platform-right-side .web-platform-simple .vector-one {
+  width: 150px !important;
   position: absolute;
-  top: -835px;
-  left: 970px;
+  top: -80px;
+  left: 220px;
 }
 .web-platform .web-platform-right-side .web-platform-deep h4 {
   position: absolute;
@@ -3076,81 +3103,75 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: -480px;
-  left: 730px;
+  top: 280px;
+  left: 0px;
 }
 .web-platform .web-platform-right-side .web-platform-deep p {
   padding-inline: 10px;
   position: absolute;
-  top: -390px;
-  left: 720px;
+  top: 360px;
+  left: -10px;
   width: 400px;
   line-height: 2em;
   font-weight: 600;
 }
 .web-platform .web-platform-right-side .web-platform-deep .vector-two {
   position: absolute;
-  top: -610px;
-  left: 955px;
+  width: 150px !important;
+  top: 150px;
+  left: 207px;
 }
 .web-platform .web-platform-right-side .web-platform-image {
   width: 281px;
   position: absolute;
-  top: -710px;
-  left: 1150px;
+  top: 50px;
+  left: 350px;
 }
 .web-platform .web-platform-right-side .web-platform-various .main-info-section-arrow {
   position: absolute;
-  top: -700px;
-  left: 1400px;
+  top: 50px;
+  right: 220px;
 }
 .web-platform .web-platform-right-side .web-platform-various .main-info-section-icon-one {
   position: absolute;
-  top: -720px;
-  left: 1510px;
+  top: 30px;
+  right: 170px;
 }
 .web-platform .web-platform-right-side .web-platform-various P {
   padding-inline: 10px;
   position: absolute;
-  top: -670px;
-  left: 1500px;
-  width: 400px;
+  top: 80px;
+  right: -30px;
   line-height: 2em;
   font-weight: 600;
 }
 .web-platform .web-platform-right-side .web-platform-related .main-info-section-arrow-two {
   position: absolute;
-  top: -490px;
-  left: 1400px;
+  bottom: 140px;
+  right: 220px;
 }
 .web-platform .web-platform-right-side .web-platform-related .main-info-section-icon-two {
   position: absolute;
-  top: -440px;
-  left: 1500px;
+  bottom: 120px;
+  right: 170px;
 }
 .web-platform .web-platform-right-side .web-platform-related p {
   padding-inline: 10px;
   position: absolute;
-  top: -400px;
-  left: 1500px;
-  width: 400px;
+  bottom: -40px;
+  right: -50px;
   line-height: 2em;
   font-weight: 600;
 }
 
 .main-heroes {
-  height: 2980px;
-}
-.main-heroes .main-cybr-car-footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-left: -50px;
+  height: 2900px !important;
 }
 
 .main-cyber-left-logos-imgs {
   width: 450px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
 }
@@ -3177,10 +3198,6 @@ html {
 .main-founders-section .main-founders-section-content-second a {
   top: 500px;
   right: 50%;
-}
-
-.tablet_splited_heroes {
-  display: none !important;
 }
 
 .video_box {
@@ -3231,13 +3248,16 @@ html {
   width: 650px;
   height: 536px;
   top: 550px;
-  left: 1100px;
+  left: inherit;
+  right: 50px !important;
 }
 .main-heroes .main-heroes-header-samuel {
   position: absolute;
   width: 350px;
   height: 423px;
   left: 1200px;
+  left: inherit;
+  right: 150px;
 }
 .main-heroes .web-platform-image-heroes {
   width: 157px !important;
@@ -3264,7 +3284,22 @@ html {
   top: -100px;
   right: 50px;
 }
+.main-heroes .main-cybr-car-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: -50px;
+}
 
+@media (max-width: 1491px) {
+  .web-platform {
+    height: 1700px;
+  }
+  .web-platform .web-platform-right-side {
+    width: 750px;
+    top: 1100px;
+  }
+}
 @media (min-width: 375px) and (max-width: 768px) {
   .swiper {
     margin-top: -350px !important;
@@ -3369,6 +3404,7 @@ html {
     height: 253px !important;
     position: absolute !important;
     top: 200px !important;
+    left: inherit;
     right: 20px !important;
   }
   .main-heroes {
@@ -3392,32 +3428,33 @@ html {
     left: 140px !important;
   }
   .main-heroes .main-heroes-footer-left-logos-imgs {
-    top: 1250px;
-    left: 120px;
+    top: 1350px;
+    left: 100px;
   }
   .heroes-table {
     position: absolute;
-    top: 1380px !important;
+    top: 1450px !important;
     left: 0;
     width: 100%;
   }
   .heroes-table .heroes-table-img {
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .main-heroes-center-wel-p {
     width: 800px !important;
+    height: 250px !important;
     font-size: 18px !important;
     text-align: center !important;
     line-height: 25px !important;
+    padding-top: 25px;
   }
   .mh_center_p {
-    width: 800px !important;
+    width: auto;
     font-size: 18px !important;
     text-align: center !important;
     line-height: 25px !important;
-    margin-left: -50px !important;
   }
   .mh_last_sec p {
     width: 800px !important;
@@ -3430,6 +3467,7 @@ html {
     height: 50px !important;
   }
   .main-heroes-footer-right {
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -3439,31 +3477,47 @@ html {
     width: 500px !important;
   }
   .main-heroes-footer-progress {
-    margin-left: 50px !important;
-    padding-inline: 50px !important;
+    margin: 50px !important;
+    padding: 50px !important;
     display: flex !important;
     gap: 150px !important;
     justify-content: center !important;
   }
+  .main-heroes-footer-progress .big-size {
+    font-size: 12px !important;
+  }
+  .main-cybr-car-footer-box-count span {
+    margin-left: 25px !important;
+  }
   .main-heroes-sopp {
     margin-top: -80px !important;
+  }
+  .main-info-section-content-header {
+    position: relative;
   }
   .main-info-section-content-header h3 {
     width: 200px;
   }
   .main-info-section-content-header .web-platform-inf {
     position: absolute;
-    top: 200px;
-    left: -10px;
+    width: 500px !important;
+    top: 220px !important;
+    left: 0px !important;
+    font-weight: 900 !important;
+    margin-bottom: 50px !important;
   }
   .web-platform-text p {
-    margin-top: 50px;
+    margin-top: 150px;
+    margin-inline: 20px !important;
     font-size: 18px;
-    margin-bottom: -50px;
+    margin-bottom: -150px !important;
+  }
+  .web-platform {
+    height: 1500px !important;
   }
   .web-platform .web-platform-right-side {
-    width: 768px !important;
-    top: 150px !important;
+    width: 100% !important;
+    top: 850px !important;
   }
   .web-platform .web-platform-right-side .web-platform-simple h4 {
     position: absolute;
@@ -3476,7 +3530,7 @@ html {
     width: 200px;
     height: 65px;
     top: 0px;
-    left: 0px;
+    left: 15px;
   }
   .web-platform .web-platform-right-side .web-platform-simple p {
     padding-inline: 10px;
@@ -3485,7 +3539,7 @@ html {
     justify-content: center;
     position: absolute;
     top: 70px;
-    left: -65px;
+    left: -50px;
     width: 300px;
     line-height: 2em;
     font-weight: 600;
@@ -3534,7 +3588,6 @@ html {
     width: 30px;
   }
   .web-platform .web-platform-right-side .web-platform-image {
-    width: 172px;
     position: absolute;
     top: 50px;
     left: 250px;
@@ -3549,22 +3602,26 @@ html {
     display: block;
     position: absolute;
     top: 25px;
-    right: 250px;
+    right: 100px;
   }
   .web-platform .web-platform-right-side .web-platform-various .main-info-section-icon-one {
     position: absolute;
     top: 5px;
-    left: 525px;
+    right: 50px;
   }
   .web-platform .web-platform-right-side .web-platform-various P {
     padding-inline: 10px;
     position: absolute;
     top: 50px;
-    left: 520px;
+    right: -100px;
     width: 200px;
     font-size: 10px;
     line-height: 2em;
     font-weight: 600;
+  }
+  .web-platform .web-platform-right-side .web-platform-related {
+    position: absolute;
+    right: -150px !important;
   }
   .web-platform .web-platform-right-side .web-platform-related .vector-four-min {
     display: block;
@@ -3675,5 +3732,8 @@ html {
     display: flex !important;
     justify-content: space-between !important;
     flex-direction: row !important;
+  }
+  .footer_top_arrow {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
